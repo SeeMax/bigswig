@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>BigSwig</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"> <!--<![endif]-->
+  <head>
+    <title>Big Swig Tours</title>
+    <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="Big Swig Tours" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.bigswigtours.com" />
+    <meta property="og:description" content="Amazing Tours of the Breweries, Beers and Beauty of Anchorage Alaska." />
+    <meta property="og:image" content="http://www.bigswigtours.com/assets/bigswig_FB_2.jpg" />
+    <meta property="og:image" content="http://www.bigswigtours.com/assets/bigswig_FB_1.jpg" />
+    <%= favicon_link_tag 'bigswig_fav.png' %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="nav-width">
+        <div class="nav-left">
+          <div id="item1" class="nav_item" >
+            <a data-scroll href="#home">Home</a>
+          </div>
+          <div id= "item2" class="nav_item" >
+            <a data-scroll href="#the_tour">The Tour</a>
+          </div>
+        </div>
+        <div class="nav-logo">
+          <img src=<%= asset_path 'bigswig_logo_400.png' %> >
+        </div>
+        <div class="nav-right">
+          <div id="item3" class="nav_item">
+            <a data-scroll href="#about_us">About Us</a>
+          </div>
+          <div id="item4" class="nav_item" >
+            <a href="www.eventbrite.com">Tickets</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+
+  </body>
 </html>

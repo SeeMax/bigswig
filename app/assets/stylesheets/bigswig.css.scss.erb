@@ -1,0 +1,307 @@
+@import "variables.css.scss" , "mixins.css.scss";
+
+html{
+  height: 100%;
+}
+
+body {
+  color: Black;
+  font-size:14px;
+  letter-spacing:1px;
+  line-height:18px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight:400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  height:100%;
+  width:100%;
+}
+
+a {
+  text-decoration:none;
+  color: Black;
+}
+
+h1 {
+  color:$mediumblue;
+  font-size:47px;
+  letter-spacing:10px;
+  line-height:60px;
+  font-family: 'Montserrat', sans-serif;
+  margin:0px auto 0px auto;
+  text-transform:uppercase;
+  }
+
+h2 {
+  color:$tan;
+  font-size:30px;
+  letter-spacing:8px;
+  line-height:30px;
+  margin:0px auto 0px auto;
+  text-transform:uppercase;
+}
+
+p {
+  margin:10px auto 0 auto;
+  text-align:left;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.page {
+  min-height:100%;
+}
+
+.content {
+  width:50%;
+  padding-top:130px;
+  margin:0 auto;
+}
+
+
+/*----------------------------------------------
+Individual pages
+----------------------------------------------*/
+.nav-back {
+  background:$lightGrey;
+  height:250px;
+}
+
+.home {
+  background-image: url('<%= asset_path("beerboard.jpg") %>');
+  background-size: cover;
+
+  .title {
+    margin:80px auto 0px auto;
+    z-index:100;
+
+    img {
+      width:100%;
+    }
+  }
+}
+
+.trailer {
+  background-image: url('<%= asset_path("treetops.jpg") %>');
+  background-size: cover;
+  top:100%;
+
+  h1 {
+    color:$darkblue;
+  }
+
+  .play-screen {
+    margin:0px auto;
+    padding-top:20px;
+    cursor:pointer;
+
+    img {
+      width:100%;
+    }
+  }
+}
+
+.about {
+  top:200%;
+  background:$yellow;
+  background-size: cover;
+}
+
+.cast {
+  top:300%;
+  background-image: url('<%= asset_path("road.jpg") %>');
+  color:white;
+  height:auto;
+  background-size: cover;
+  padding-bottom:60px;
+
+  a, a:hover {
+    text-decoration:none;
+    color:white;
+  }
+
+  .member {
+    background:$darkblue;
+    height:100%;
+    padding:2%;
+    margin:0px auto 1% auto;
+  }
+
+  h1 {
+    color:$darkblue;
+  }
+
+  h2 {
+    color:$tan;
+    width:100%;
+  }
+
+  p {
+    width:100%;
+    }
+
+  img {
+    float:left;
+    width:40%;
+    padding:0 2% 1% 0;
+  }
+}
+
+.screenings {
+  top:400%;
+  height:auto;
+  background-image: url('<%= asset_path("road.jpg") %>');
+  background-size: cover;
+  color:$lightbrown;
+  padding-bottom:60px;
+
+  a, a:hover {
+    text-decoration:none;
+    color:$tan;
+  }
+
+  h1 {
+    color:$brown;
+    margin-bottom:1%;
+  }
+
+  h2 {
+    color:$tan;
+    width:100%;
+    padding-bottom:1%;
+  }
+
+  .screening_location {
+    background:$brown;
+    height:100%;
+    padding:2%;
+    margin:0px auto 2% auto;
+    font-size:18px;
+    line-height:22px;
+    text-align:left;
+  }
+
+  .ticket_button {
+    padding: 5px 10px;
+    background:$darkbrown;
+    width:120px;
+    text-align:center;
+    text-transform:uppercase;
+    margin-top:20px;
+    letter-spacing:2px;
+    opacity:.7;
+    @include transition;
+  }
+
+  .ticket_button:hover {
+    opacity:1;
+  }
+
+}
+
+.press {
+  top:500%;
+  height:auto;
+  background-image: url('<%= asset_path("alaskan_road.jpg") %>');
+  background-size: cover;
+  color:$mediumblue;
+  padding-bottom:60px;
+
+    a, a:hover {
+      text-decoration:none;
+      color:$tan;
+    }
+
+    h1 {
+      color:$lightblue;
+      margin-bottom:1%;
+    }
+
+    h2 {
+      color:$darkblue;
+      width:100%;
+    }
+
+    p {
+      width:100%;
+      font-size:14px;
+    }
+
+    .press_clip {
+      background:$lightblue;
+      height:100%;
+      padding:2%;
+      margin:0px auto 2% auto;
+      font-size:18px;
+      line-height:22px;
+      text-align:left;
+    }
+
+    a {
+      color:$mediumblue;
+      text-decoration:underline;
+    }
+
+    a:hover {
+      opacity:1;
+    }
+  }
+
+.contact {
+  top:600%;
+  height:auto;
+  background-image: url('<%= asset_path("alaskan_road.jpg") %>');
+  background-size: cover;
+  font-color:$darkbrown;
+
+  .content {
+    width:40%;
+  }
+
+  h1 {
+    color:$darkblue;
+  }
+
+  p {
+    font-size:16px;
+    line-height:20px;
+  }
+
+  a {
+    text-decoration:underline;
+    color:$darkblue;
+  }
+
+  a:hover {
+    color:$mediumblue;
+    text-decoration:none;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .content {
+    width:90%;
+  }
+
+  h2 {
+    font-size:22px;
+  }
+
+  .member {
+
+    img {
+      width:25%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    width:70%;
+  }
+}
+
+@media (max-width: 991px) {
+
+}
