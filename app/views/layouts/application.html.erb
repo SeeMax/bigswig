@@ -19,6 +19,7 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+    <div class="nav-top"></div>
     <div class="nav-bar">
       <div class="nav-width">
         <div class="nav-left">
@@ -37,11 +38,12 @@
             <a data-scroll href="#about_us">About Us</a>
           </div>
           <div id="item4" class="nav_item" >
-            <a href="www.eventbrite.com">Tickets</a>
+            <a data-scroll href="#tickets">Tickets</a>
           </div>
         </div>
       </div>
     </div>
+    <div class="nav-bottom"></div>
 
     <%= yield %>
 

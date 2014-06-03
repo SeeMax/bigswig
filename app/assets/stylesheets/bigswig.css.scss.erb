@@ -1,16 +1,32 @@
 @import "variables.css.scss" , "mixins.css.scss";
 
+/* =================================== */
+/* Clear Fix */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/* =================================== */
+/* General */
+
 html{
   height: 100%;
 }
 
 body {
   color: Black;
-  font-size:14px;
+  font-size:20px;
   letter-spacing:1px;
-  line-height:18px;
+  line-height:30px;
   font-family: Verdana, Geneva, sans-serif;
-  font-weight:400;
+  font-weight:bold;
+  text-align:center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
@@ -34,274 +50,254 @@ h1 {
   }
 
 h2 {
-  color:$tan;
-  font-size:30px;
-  letter-spacing:8px;
-  line-height:30px;
-  margin:0px auto 0px auto;
+  color:white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:18px;
+  font-weight:bold;
+  letter-spacing:1px;
+  line-height:26px;
   text-transform:uppercase;
 }
 
 p {
   margin:10px auto 0 auto;
-  text-align:left;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-
-.page {
-  min-height:100%;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .content {
-  width:50%;
-  padding-top:130px;
+  width:60%;
+  padding:50px 0 150px 0;
   margin:0 auto;
+  position:relative;
+}
+
+.tag-line {
+  height:90px;
+  background:$yellow;
+  color:white;
+  line-height: 90px;
+  vertical-align:middle;
+  text-align:center;
+  font-size:30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  sup {
+    font-size:70%;
+    position:relative;
+    top:-10px;
+    border-bottom:3px white solid;
+  }
+}
+
+.section-title {
+  margin:0px auto 30px auto;
+  max-width:270px;
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px 45px;
+  text-transform: uppercase;
+  color:white;
+  border: 6px white solid;
+  font-weight:700;
+  font-size:46px;
+}
+
+.tickets-button {
+  border:3px black solid;
+  background:white;
+  padding:8px 20px;
+  max-width:200px;
+  color:black;
+  font-size:17px;
+  text-transform: uppercase;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  position:absolute;
+  top:-25px;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  @include transition;
+
+  a {
+    color:black;
+    text-decoration:none;
+  }
+
+  &:hover {
+    background:black;
+
+    a {
+      color:white;
+    }
+  }
 }
 
 
-/*----------------------------------------------
-Individual pages
-----------------------------------------------*/
-.nav-back {
-  background:$lightGrey;
-  height:250px;
-}
+/* =================================== */
+/* Sections */
 
 .home {
-  background-image: url('<%= asset_path("beerboard.jpg") %>');
-  background-size: cover;
+  background-image: url('<%= asset_path("beerpour.jpg") %>');
+  height: 0;
+  padding: 0;
+  padding-bottom: 48%;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 
-  .title {
-    margin:80px auto 0px auto;
-    z-index:100;
-
-    img {
-      width:100%;
-    }
-  }
-}
-
-.trailer {
-  background-image: url('<%= asset_path("treetops.jpg") %>');
-  background-size: cover;
-  top:100%;
-
-  h1 {
-    color:$darkblue;
-  }
-
-  .play-screen {
-    margin:0px auto;
-    padding-top:20px;
-    cursor:pointer;
-
-    img {
-      width:100%;
-    }
-  }
-}
-
-.about {
-  top:200%;
-  background:$yellow;
-  background-size: cover;
-}
-
-.cast {
-  top:300%;
-  background-image: url('<%= asset_path("road.jpg") %>');
-  color:white;
-  height:auto;
-  background-size: cover;
-  padding-bottom:60px;
-
-  a, a:hover {
-    text-decoration:none;
-    color:white;
-  }
-
-  .member {
-    background:$darkblue;
-    height:100%;
-    padding:2%;
-    margin:0px auto 1% auto;
-  }
-
-  h1 {
-    color:$darkblue;
-  }
-
-  h2 {
-    color:$tan;
-    width:100%;
+  .content {
+    padding-top:10%;
   }
 
   p {
-    width:100%;
-    }
-
-  img {
-    float:left;
-    width:40%;
-    padding:0 2% 1% 0;
+    text-align:center;
+    color:white;
+    font-size:30px;
+    line-height:50px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
   }
 }
 
-.screenings {
-  top:400%;
-  height:auto;
-  background-image: url('<%= asset_path("road.jpg") %>');
-  background-size: cover;
-  color:$lightbrown;
-  padding-bottom:60px;
+.tour {
+  background:$yellow;
 
-  a, a:hover {
-    text-decoration:none;
-    color:$tan;
+  p {
+    color:white;
   }
+}
 
-  h1 {
-    color:$brown;
-    margin-bottom:1%;
-  }
+.breweries-area {
+  width:100%;
+  margin-top:40px;
+  overflow: hidden;
+}
+
+.brewery {
+  float:left;
+  width:33%;
 
   h2 {
-    color:$tan;
-    width:100%;
-    padding-bottom:1%;
-  }
-
-  .screening_location {
-    background:$brown;
-    height:100%;
-    padding:2%;
-    margin:0px auto 2% auto;
-    font-size:18px;
-    line-height:22px;
-    text-align:left;
-  }
-
-  .ticket_button {
-    padding: 5px 10px;
-    background:$darkbrown;
-    width:120px;
-    text-align:center;
-    text-transform:uppercase;
-    margin-top:20px;
-    letter-spacing:2px;
-    opacity:.7;
-    @include transition;
-  }
-
-  .ticket_button:hover {
-    opacity:1;
-  }
-
-}
-
-.press {
-  top:500%;
-  height:auto;
-  background-image: url('<%= asset_path("alaskan_road.jpg") %>');
-  background-size: cover;
-  color:$mediumblue;
-  padding-bottom:60px;
-
-    a, a:hover {
-      text-decoration:none;
-      color:$tan;
-    }
-
-    h1 {
-      color:$lightblue;
-      margin-bottom:1%;
-    }
-
-    h2 {
-      color:$darkblue;
-      width:100%;
-    }
-
-    p {
-      width:100%;
-      font-size:14px;
-    }
-
-    .press_clip {
-      background:$lightblue;
-      height:100%;
-      padding:2%;
-      margin:0px auto 2% auto;
-      font-size:18px;
-      line-height:22px;
-      text-align:left;
-    }
-
-    a {
-      color:$mediumblue;
-      text-decoration:underline;
-    }
-
-    a:hover {
-      opacity:1;
-    }
-  }
-
-.contact {
-  top:600%;
-  height:auto;
-  background-image: url('<%= asset_path("alaskan_road.jpg") %>');
-  background-size: cover;
-  font-color:$darkbrown;
-
-  .content {
-    width:40%;
-  }
-
-  h1 {
-    color:$darkblue;
+    width:90%;
+    margin:0px auto;
   }
 
   p {
     font-size:16px;
-    line-height:20px;
-  }
-
-  a {
-    text-decoration:underline;
-    color:$darkblue;
-  }
-
-  a:hover {
-    color:$mediumblue;
-    text-decoration:none;
+    line-height:26px;
+    color:black;
+    font-weight:normal;
+    width:80%;
   }
 }
 
 
-@media (max-width: 479px) {
-  .content {
-    width:90%;
+.travel-quote {
+  position:relative;
+
+  img {
+    width:100%;
+    display: block;
   }
+}
 
-  h2 {
-    font-size:22px;
+.about {
+  background:white;
+
+  .section-title {
+    color:black;
+    border-color: black;
   }
+}
 
-  .member {
+.whitecaps-carousel {
+  position:relative;
+  background-image: url('<%= asset_path("whitecaps.jpg") %>');
+  height: 0;
+  padding: 0;
+  padding-bottom: 39%;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
-    img {
-      width:25%;
+.yellow-bar {
+  height:20px;
+  background:$yellow;
+}
+
+.tickets-headline {
+  background-image: url('<%= asset_path("beerboard.jpg") %>');
+  height: 0;
+  padding: 0;
+  padding-bottom: 66%;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.tickets-copy {
+  background:$yellow;
+  color:white;
+}
+
+/* =================================== */
+/* Responsive 0px - 479px */
+
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  body {
+
+  }
+}
+
+/* =================================== */
+/* Responsive 480px - 769px */
+
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    body {
+
     }
   }
-}
 
-@media (max-width: 767px) {
-  .content {
-    width:70%;
+/* =================================== */
+/* Responsive 770px - 959px */
+
+
+@media screen and (min-width: 770px) and (max-width: 959px) {
+  body {
+
   }
 }
 
-@media (max-width: 991px) {
+/* =================================== */
+/* Responsive 960px - 1219px */
 
+
+@media screen and (min-width: 960px) and (max-width: 1349px){
+  body {
+
+  }
+}
+
+/* =================================== */
+/* Responsive 1220px - ∞ */
+
+
+@media screen and (min-width: 1350px) {
+  .home {
+    .content {
+      padding-top:15%;
+    }
+
+    p {
+      font-size:40px;
+      line-height:60px;
+    }
+  }
 }

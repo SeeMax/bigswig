@@ -1,5 +1,10 @@
 @import "variables.css.scss" , "mixins.css.scss";
 
+.nav-top {
+  background:$lightGrey;
+  height:35px;
+}
+
 .nav-bar {
   font-family:'Montserrat', sans-serif;
   letter-spacing:1px;
@@ -7,15 +12,19 @@
   font-weight:700;
   width:100%;
   height:90px;
+  padding-bottom:28px;
   text-transform: uppercase;
-  position:fixed;
-  top:50px;
   z-index:100;
   background:$lightGrey;
 }
 
+.nav-bottom {
+  background:$lightGrey;
+  height:72px;
+}
+
 .nav-width {
-  width:80%;
+  width:90%;
   text-align:center;
   position:relative;
   top:40px;
@@ -36,13 +45,26 @@ a:hover {
 }
 
 .nav-right, .nav-left, .nav-logo {
-    width:30%;
-    height:70px;
-    margin:0;
-    display:inline-block;
-    vertical-align: top;
-  }
+  width:30%;
+  height:70px;
+  margin:0;
+  display:inline-block;
+  vertical-align: top;
+}
 
+.nav-logo {
+  text-align:center;
+  height:100%;
+  @include transition;
+
+  img {
+    max-width:200px;
+    margin-top:-55px;
+    width:100%;
+    vertical-align:middle;
+    @include transition;
+  }
+}
 
 .nav_item {
   display:inline-block;
@@ -51,35 +73,28 @@ a:hover {
   text-align:center;
 }
 
+/* =================================== */
+/* Dynamic Components */
+
+.stuck{
+  position: fixed;
+  top: 0px;
+}
 
 .active {
   background: $yellow;
   @include transition;
 }
 
-.nav-logo {
-  text-align:center;
-  margin-top:-60px;
-  height:100%;
-  @include transition;
-
-    img {
-      width:200px;
-      vertical-align:middle;
-      @include transition;
-    }
-  }
-
-
 .small-nav {
   .nav-logo {
-    margin-top:-30px;
     img {
       width:100px;
+      margin-top:-20px;
     }
   }
-
 }
+
 
 
 

@@ -1,30 +1,105 @@
+
 $( document ).ready(function() {
 
   $('#home').waypoint(function(direction) {
-    $('#item1').addClass('active', direction === 'down');
-    $('#item2').removeClass('active', direction === 'down');
-    $('#item3').removeClass('active', direction === 'down');
-    $('#item4').removeClass('active', direction === 'down');
-  }, { offset: -1 });
+    if (direction === 'down') {
+      $('#item1').addClass('active');
+      $('#item2').removeClass('active');
+      $('#item3').removeClass('active');
+      $('#item4').removeClass('active');
+    }
+  }, { offset: 118 });
+
+  $('#home').waypoint(function(direction) {
+    if (direction === 'up') {
+      $('#item1').addClass('active');
+      $('#item2').removeClass('active');
+      $('#item3').removeClass('active');
+      $('#item4').removeClass('active');
+    }
+  }, {
+    offset: function() {
+      // This is the calculation that would give you
+      // "bottom of element hits middle of window"
+      return $.waypoints('viewportHeight') / 2 - $(this).outerHeight();
+    }
+  });
+
 
   $('#the_tour').waypoint(function(direction) {
-    $('#item2').addClass('active', direction === 'down');
-    $('#item1').removeClass('active', direction === 'down');
-    $('#item3').removeClass('active', direction === 'down');
-    $('#item4').removeClass('active', direction === 'down');
-  }, { offset: 100 });
+    if (direction === 'down') {
+      $('#item2').addClass('active');
+      $('#item1').removeClass('active');
+      $('#item3').removeClass('active');
+      $('#item4').removeClass('active');
+    }
+  }, { offset: 118 });
 
-  $('#about_us').waypoint(function(direction) {
-    $('#item3').addClass('active', direction === 'down');
-    $('#item1').removeClass('active', direction === 'down');
-    $('#item2').removeClass('active', direction === 'down');
-    $('#item4').removeClass('active', direction === 'down');
-  }, { offset: 100 });
+  $('#the_tour').waypoint(function(direction) {
+    if (direction === 'up') {
+      $('#item2').addClass('active');
+      $('#item1').removeClass('active');
+      $('#item3').removeClass('active');
+      $('#item4').removeClass('active');
+    }
+  }, {
+    offset: function() {
+      // This is the calculation that would give you
+      // "bottom of element hits middle of window"
+      return $.waypoints('viewportHeight') / 2 - $(this).outerHeight();
+    }
+  });
 
-  $('#tickets').waypoint(function(direction) {
-    $('#item4').addClass('active', direction === 'down');
-    $('#item1').removeClass('active', direction === 'down');
-    $('#item2').removeClass('active', direction === 'down');
-    $('#item3').removeClass('active', direction === 'down');
-  }, { offset: 100 });
+ $('#about_us').waypoint(function(direction) {
+   if (direction === 'down') {
+     $('#item3').addClass('active');
+     $('#item2').removeClass('active');
+     $('#item1').removeClass('active');
+     $('#item4').removeClass('active');
+   }
+ }, { offset: 118 });
+
+ $('#about_us').waypoint(function(direction) {
+   if (direction === 'up') {
+     $('#item3').addClass('active');
+     $('#item2').removeClass('active');
+     $('#item1').removeClass('active');
+     $('#item4').removeClass('active');
+   }
+ }, {
+   offset: function() {
+     // This is the calculation that would give you
+     // "bottom of element hits middle of window"
+     return $.waypoints('viewportHeight') / 3 - $(this).outerHeight();
+   }
+ });
+
+ $('#tickets').waypoint(function(direction) {
+   if (direction === 'down') {
+     $('#item4').addClass('active');
+     $('#item2').removeClass('active');
+     $('#item1').removeClass('active');
+     $('#item3').removeClass('active');
+   }
+ }, { offset: 118 });
+
+ $('#tickets').waypoint(function(direction) {
+   if (direction === 'up') {
+     $('#item4').addClass('active');
+     $('#item2').removeClass('active');
+     $('#item1').removeClass('active');
+     $('#item3').removeClass('active');
+   }
+ }, {
+   offset: function() {
+     // This is the calculation that would give you
+     // "bottom of element hits middle of window"
+     return $.waypoints('viewportHeight') / 2 - $(this).outerHeight();
+   }
+ });
+
+
+$('.nav-bar').waypoint('sticky');
+
 });
+
