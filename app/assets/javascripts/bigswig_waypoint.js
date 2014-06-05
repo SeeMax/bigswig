@@ -8,7 +8,7 @@ $( document ).ready(function() {
       $('#item3').removeClass('active');
       $('#item4').removeClass('active');
     }
-  }, { offset: 118 });
+  }, { offset: 65 });
 
   $('#home').waypoint(function(direction) {
     if (direction === 'up') {
@@ -33,7 +33,7 @@ $( document ).ready(function() {
       $('#item3').removeClass('active');
       $('#item4').removeClass('active');
     }
-  }, { offset: 118 });
+  }, { offset: 65 });
 
   $('#the_tour').waypoint(function(direction) {
     if (direction === 'up') {
@@ -57,7 +57,7 @@ $( document ).ready(function() {
      $('#item1').removeClass('active');
      $('#item4').removeClass('active');
    }
- }, { offset: 118 });
+ }, { offset: 65 });
 
  $('#about_us').waypoint(function(direction) {
    if (direction === 'up') {
@@ -81,7 +81,7 @@ $( document ).ready(function() {
      $('#item1').removeClass('active');
      $('#item3').removeClass('active');
    }
- }, { offset: 118 });
+ }, { offset: 65 });
 
  $('#tickets').waypoint(function(direction) {
    if (direction === 'up') {

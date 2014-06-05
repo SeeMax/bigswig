@@ -2,7 +2,7 @@
 
 .nav-top {
   background:$lightGrey;
-  height:35px;
+  height:50px;
 }
 
 .nav-bar {
@@ -11,7 +11,7 @@
   font-size:16px;
   font-weight:700;
   width:100%;
-  height:90px;
+  height:30px;
   padding-bottom:28px;
   text-transform: uppercase;
   z-index:100;
@@ -20,14 +20,14 @@
 
 .nav-bottom {
   background:$lightGrey;
-  height:72px;
+  height:162px;
 }
 
 .nav-width {
   width:90%;
   text-align:center;
   position:relative;
-  top:40px;
+  top:15px;
   left:0;
   right:0;
   margin-right: auto !important;
@@ -44,25 +44,35 @@ a:hover {
   border-top:$yellow;
 }
 
-.nav-right, .nav-left, .nav-logo {
+.nav-right, .nav-left,{
   width:30%;
-  height:70px;
+  height:30px;
   margin:0;
   display:inline-block;
   vertical-align: top;
+  @include transition3;
+}
+
+.nav-right {
+  margin-left:30%;
 }
 
 .nav-logo {
   text-align:center;
   height:100%;
+  position:absolute;
+  top:-55px;
+  left:0;
+  right:0;
+  margin:0 auto;
   @include transition;
 
   img {
-    max-width:200px;
-    margin-top:-55px;
+    max-width:218px;
+    max-height:216px;
     width:100%;
     vertical-align:middle;
-    @include transition;
+    @include transition3;
   }
 }
 
@@ -71,6 +81,23 @@ a:hover {
   width:49%;
   height:10px;
   text-align:center;
+  position:relative;
+}
+
+
+.link {
+}
+
+
+.link-back {
+  position:absolute;
+  top:10px;
+  margin:0px auto;
+  left:0;
+  right:0;
+  height:8px;
+  width:90px;
+  z-index:-1;
 }
 
 /* =================================== */
@@ -89,8 +116,8 @@ a:hover {
 .small-nav {
   .nav-logo {
     img {
-      width:100px;
-      margin-top:-20px;
+      max-width:0px;
+      max-height:0px;
     }
   }
 }
