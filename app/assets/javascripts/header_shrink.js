@@ -11,7 +11,7 @@ $( document ).ready(function() {
       if ($(document).scrollTop() <= 19) {
         $('.nav-right').css("margin-left" , "30%");
       } else {
-        $('.nav-right').css("margin-left" , "0%");
+        $('.nav-right').css("margin-left" , "20%");
       }
   });
 });

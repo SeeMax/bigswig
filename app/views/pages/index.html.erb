@@ -4,12 +4,15 @@
 
 <div id ="home" class="home page" >
   <div class="content">
-    <h2>
+    <h1>
       Welcome to Big Swig Tours.<br>
       We’re exploring the Last Frontier, <br>
       one craft brewery at a time. <br>
       Join us on our quest.
-    </h2>
+    </h1>
+    <div class="home-arrow">
+      <img src=<%= asset_path 'home-arrow.png' %> >
+    </div>
   </div>
 </div>
 <div id ="the_tour" class="tour page" >
@@ -17,55 +20,63 @@
     <div class="section-title">
       THE TOUR
     </div>
-    <h2>
-      Imagine your frosty cold pint with a storyteller sidecar and you’re imagining an afternoon with Big Swig.
-
+    <h1>
+      Imagine your frosty cold pint with a storyteller sidecar<br>
+      and you’re imagining<br>
+      an afternoon with Big Swig.
+    </h1>
       <p>
-        By that we mean our tours are as much about the history of Alaskan beers, the masters who brew them and the locals who drink them, as they are about tasting the beers themselves*.
-      Each tour departs from the heart of downtown Anchorage. During your 3.5 hour adventure, your Big Swig Hoperator will escort you around town and off the beaten path as you explore Alaska’s finest breweries.
+        By that we mean our tours are as much about the history of Alaskan beers, the masters who brew them and the locals who drink them, as they are about tasting the beers themselves*.<br><br>
+        Each tour departs from the heart of downtown Anchorage. During your 3.5 hour adventure, your Big Swig Hoperator will escort you around town and off the beaten path as you explore Alaska’s finest breweries.
     </p>
-    <div class="breweries-area cf">
-      <div class="brewery">
-        <img src=<%= asset_path 'brewery_icon_1.png' %> >
-        <h2>
-          Midnight Sun<br>
-          Brewing Co.
-        </h2>
-        <p>
-          This is a brewery that serves beer. It is so damn good. Seriously, I can’t believe how good it is.
-        </p>
-      </div>
-
-      <div class="brewery">
-        <img src=<%= asset_path 'brewery_icon_2.png' %> >
-        <h2>
-          King Street<br>
-          Brewery
-        </h2>
-        <p>
-          This is a brewery that also serves beer. It has a fun story behind it. And you’ll be very interested to hear all about it.
-        </p>
-      </div>
-
-
-      <div class="brewery" id="brewery-3">
-        <img src=<%= asset_path 'brewery_icon_3.png' %> >
-        <h2>
-          World Famous<br>
-          Chilkoot Charlies
-        </h2>
-        <p>
-          This one is a bar. But you’ll still love it. You can continue to drink and listen to good stories.
-        </p>
-      </div>
+    <div class="asterisk">
+      *Okay, so tasting the beers is the most important. Who are we kidding? Big Swig’s our name.
     </div>
   </div>
 </div>
+<div class="breweries-area page">
+  <div class="content cf">
+    <div class="brewery">
+      <img src=<%= asset_path 'brewery_icon_1.png' %> >
+      <h2>
+        Midnight Sun<br>
+        Brewing Co.
+      </h2>
+      <p>
+        This is a brewery that serves beer. It is so damn good. Seriously, I can’t believe how good it is.
+      </p>
+    </div>
+
+    <div class="brewery">
+      <img src=<%= asset_path 'brewery_icon_2.png' %> >
+      <h2>
+        King Street<br>
+        Brewery
+      </h2>
+      <p>
+        This is a brewery that also serves beer. It has a fun story behind it. And you’ll be very interested to hear all about it.
+      </p>
+    </div>
+
+
+    <div class="brewery" id="brewery-3">
+      <img src=<%= asset_path 'brewery_icon_3.png' %> >
+      <h2>
+        World Famous<br>
+        Chilkoot Charlies
+      </h2>
+      <p>
+        This one is a bar. But you’ll still love it. You can continue to drink and listen to good stories.
+      </p>
+    </div>
+  </div>
+</div>
+
 <div class="travel-quote page" >
   <div class="tickets-button">
     <a href="www.eventbrite.com" target="_blank">Buy tickets!</a>
   </div>
-  <img src=<%= asset_path 'road.jpg' %> >
+  <img src=<%= asset_path 'road.png' %> >
 </div>
 <div id ="about_us" class="about page" >
   <div class="content">
@@ -73,14 +84,26 @@
       ABOUT US
     </div>
     <p>
-      This copy is FPO. Big Swig was started by Lorem ipsum dolor sit Experience the rich history of Boston in an entirely new way. Spend the day with Boston Brew Tours as we sample our way through the city, along a journey filled with craft breweries, artisan beers and delicious food!
+      At Big Swig our philosophy and our outlook on life are one in the same: drink good beer with good friends. It’s really that simple. That’s why it’s important to us that you get more out of our tours than the beer tastings. We want you to leave your time with us feeling like you’ve connected with Alaska and, most importantly, with the people who call this breathtaking state home.
     </p>
+    <h1>We look forward to<br>raising our glass with you.</h1>
   </div>
 </div>
+<div class="woods page" >
+  <div class="white-bar-box"><div class="white-bar"></div></div>
+  <h1>
+    Going to be in our <br>
+    neck of the woods? <br>
+    Holler at us. 
+  </h1>
+  <h2>
+    <a href="tel:+15555555555">555-5555-555</a><br>
+    <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a>
+  </h2>
+  <div class="white-bar-box"><div class="white-bar"></div></div>
+</div>
 <div class="whitecaps-carousel page" >
-  <div class="tickets-button">
-    <a href="www.eventbrite.com" target="_blank">Buy tickets!</a>
-  </div>
+
 </div>
 <div class="yellow-bar page" ></div>
 <div id ="tickets" class="tickets-headline page" >
@@ -88,6 +111,7 @@
     <div class="section-title">
       TICKETS
     </div>
+    <img src=<%= asset_path 'tour-details.png' %> >
   </div>
 </div>
 <div class="tickets-copy page" >
