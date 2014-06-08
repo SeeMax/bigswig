@@ -1,8 +1,8 @@
 <div class="tag-line">
   a GOOD TIME SUPPLY <sup>co</sup>
 </div>
-
-<div id ="home" class="home page" >
+<div id="bounce"></div>
+<div class="home page">
   <div class="content">
     <h1>
       Welcome to Big Swig Tours.<br>
@@ -10,13 +10,31 @@
       one craft brewery at a time. <br>
       Join us on our quest.
     </h1>
-    <div class="home-arrow">
-      <img src=<%= asset_path 'home-arrow.png' %> >
+    <div class="home-arrow"
+    data-1-top="padding-top:15px;"
+    data-10-top="padding-top:10px;"
+    data-20-top="padding-top:5px;"
+    data-30-top="padding-top:0px;"
+    data-40-top="padding-top:5px;"
+    data-50-top="padding-top:10px;"
+    data-60-top="padding-top:15px;"
+    data-70-top="padding-top:10px;"
+    data-80-top="padding-top:5px;"
+    data-90-top="padding-top:0px;"
+    data-100-top="padding-top:5px;"
+    data-110-top="padding-top:10px;"
+    data-anchor-target="#bounce"    >
+      <a data-scroll href="#the_tour"><img src=<%= asset_path 'home-arrow.png' %> ></a>
     </div>
   </div>
 </div>
-<div id ="the_tour" class="tour page" >
-  <div class="content" >
+</div><!-- CLOSING TAG FOR <div id="#home"> IN APPLICATION TEMPLATE -->
+<div id ="the_tour" class="tour page">
+  <div class="content"
+  data-top="opacity:1;"
+  data-center="opacity: 0;"
+  data-anchor-target=".home"
+  >
     <div class="section-title">
       THE TOUR
     </div>
@@ -36,43 +54,62 @@
 </div>
 <div class="breweries-area page">
   <div class="content cf">
-    <div class="brewery">
-      <img src=<%= asset_path 'brewery_icon_1.png' %> >
-      <h2>
-        Midnight Sun<br>
-        Brewing Co.
-      </h2>
-      <p>
-        This is a brewery that serves beer. It is so damn good. Seriously, I can’t believe how good it is.
-      </p>
+    <div class="brewery-container"
+    data-center="margin-top:400px;"
+    data-top="margin-top:0;"
+    data-anchor-target="#the_tour h1"
+    >
+      <div class="brewery">
+        <img src=<%= asset_path 'brewery_icon_1.png' %> >
+        <h2>
+          Midnight Sun<br>
+          Brewing Co.
+        </h2>
+        <p>
+          Anchorage’s oldest brewery, Midnight Sun has medaled at both the Great American Beer Festival and the World Beer Cup. Tastes like victory.
+        </p>
+      </div>
     </div>
-
-    <div class="brewery">
-      <img src=<%= asset_path 'brewery_icon_2.png' %> >
-      <h2>
-        King Street<br>
-        Brewery
-      </h2>
-      <p>
-        This is a brewery that also serves beer. It has a fun story behind it. And you’ll be very interested to hear all about it.
-      </p>
+    <div class="brewery-container"
+    data-center="margin-top:200px; opacity:1"
+    data-top="margin-top:0; opacity 0"
+    data-anchor-target="#the_tour h1"
+    >
+      <div class="brewery">
+        <img src=<%= asset_path 'brewery_icon_2.png' %> >
+        <h2>
+          King Street<br>
+          Brewery
+        </h2>
+        <p>
+          New to the Alaska beer scene, King Street Brewing Company is proving that even the young cubs and hang with the old grizzlies.
+        </p>
+      </div>
     </div>
+    <div class="brewery-container"
+    data-center="margin-top:500px;"
+    data-top="margin-top:0;"
+    data-anchor-target="#the_tour h1"
 
-
-    <div class="brewery" id="brewery-3">
-      <img src=<%= asset_path 'brewery_icon_3.png' %> >
-      <h2>
-        World Famous<br>
-        Chilkoot Charlies
-      </h2>
-      <p>
-        This one is a bar. But you’ll still love it. You can continue to drink and listen to good stories.
-      </p>
+    >
+      <div class="brewery" id="brewery-3">
+        <img src=<%= asset_path 'brewery_icon_3.png' %> >
+        <h2>
+          Chilkoot Charlies
+        </h2>
+        <p>
+          It’s impossible to talk Alaskan beer history without visiting world famous Chilkoot Charlie’s. Sound like a local and call ‘em “Koot’s.”
+        </p>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="travel-quote page" >
+<div class="travel-quote page"
+data-300-top="margin-top:0px;"
+data-top-bottom="margin-top:-700px;"
+data-anchor-target=".breweries-area"
+>
   <div class="tickets-button">
     <a href="www.eventbrite.com" target="_blank">Buy tickets!</a>
   </div>
@@ -90,7 +127,14 @@
   </div>
 </div>
 <div class="woods page" >
-  <div class="white-bar-box"><div class="white-bar"></div></div>
+  <div class="white-bar-box">
+    <div class="white-bar"
+    data-top="height:0%;"
+    data-top-bottom="height:100%;"
+    data-anchor-target=".about"
+    >
+    </div>
+  </div>
   <h1>
     Going to be in our <br>
     neck of the woods? <br>
@@ -100,10 +144,20 @@
     <a href="tel:+15555555555">555-5555-555</a><br>
     <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a>
   </h2>
-  <div class="white-bar-box"><div class="white-bar"></div></div>
+  <div class="white-bar-box">
+    <div class="white-bar"
+    <div class="white-bar"
+    data-top="height:0%;"
+    data-top-bottom="height:100%;"
+    data-anchor-target=".about"
+
+    >
+    </div>
+  </div>
 </div>
 <div class="whitecaps-carousel page" >
-
+  <div id="white-cap-image">
+  </div>
 </div>
 <div class="yellow-bar page" ></div>
 <div id ="tickets" class="tickets-headline page" >
@@ -117,10 +171,36 @@
 <div class="tickets-copy page" >
   <div class="content">
     <p>
-      This copy is FPO. The price includes this lorem ipsum dolor. rew Tours as we sample our way through the city, along a journey filled with craft breweries.
+      Tickets include 12 beer tastings, a selection of appetizers at
+      Midnight Sun, round-trip transportation and 3.5 hours of stories
+      you’ll be sure to recount to your friends back home.<br><br>
+      Oh, we should mention you have to be 21 or older to come along.
+      But you knew that already, didn’t you?
     </p>
     <div class="tickets-button">
       <a href="www.eventbrite.com" target="_blank">Buy tickets!</a>
+    </div>
+  </div>
+</div>
+<div class="footer" >
+  <div class="content">
+    <div class="top-button">
+      <a data-scroll href="#home">
+        <img src=<%= asset_path 'top-button.png' %> >
+      </a>
+    </div>
+    <div class ="footer-image"> <img src=<%= asset_path 'footer-logo-type.png' %> ></div>
+    <div class ="footer-image"> <img src=<%= asset_path 'seam-icon.png' %> ></div>
+    <p>
+      <a href="tel:+15555555555">555-5555-555</a><br>
+      <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a><br>
+      <a href="http://searchinstagram.com/bigswig" target"_blank" >#BigSwig</a>
+    </p>
+    <div class="social-icons">
+      <img class ="icon" src=<%= asset_path 'fb-icon.png' %> >
+      <img class ="icon" src=<%= asset_path 'insta-icon.png' %> >
+      <img class ="icon" src=<%= asset_path 'yelp-icon.png' %> >
+      <img class ="icon" src=<%= asset_path 'tripadvisor-icon.png' %> >
     </div>
   </div>
 </div>

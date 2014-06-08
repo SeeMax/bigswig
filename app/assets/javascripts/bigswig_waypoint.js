@@ -1,14 +1,16 @@
 
 $( document ).ready(function() {
 
-  $('#home').waypoint(function(direction) {
+$('.nav-bar').waypoint('sticky');
+
+  $('#home-anchor').waypoint(function(direction) {
     if (direction === 'down') {
       $('#item1').addClass('active');
       $('#item2').removeClass('active');
       $('#item3').removeClass('active');
       $('#item4').removeClass('active');
     }
-  }, { offset: 65 });
+  }, { offset: 30 });
 
   $('#home').waypoint(function(direction) {
     if (direction === 'up') {
@@ -33,7 +35,7 @@ $( document ).ready(function() {
       $('#item3').removeClass('active');
       $('#item4').removeClass('active');
     }
-  }, { offset: 65 });
+  }, { offset: 58 });
 
   $('#the_tour').waypoint(function(direction) {
     if (direction === 'up') {
@@ -57,7 +59,7 @@ $( document ).ready(function() {
      $('#item1').removeClass('active');
      $('#item4').removeClass('active');
    }
- }, { offset: 65 });
+ }, { offset: 58 });
 
  $('#about_us').waypoint(function(direction) {
    if (direction === 'up') {
@@ -81,7 +83,7 @@ $( document ).ready(function() {
      $('#item1').removeClass('active');
      $('#item3').removeClass('active');
    }
- }, { offset: 65 });
+ }, { offset: 58 });
 
  $('#tickets').waypoint(function(direction) {
    if (direction === 'up') {
@@ -97,9 +99,5 @@ $( document ).ready(function() {
      return $.waypoints('viewportHeight') / 2 - $(this).outerHeight();
    }
  });
-
-
-$('.nav-bar').waypoint('sticky');
-
 });
 

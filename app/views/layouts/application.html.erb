@@ -19,7 +19,9 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class="nav-top"></div>
+  <div id ="home">
+    <div class="nav-top" ></div>
+    <div id="home-anchor"></div>
     <div class="nav-bar">
       <div class="nav-width">
         <div class="nav-left">
@@ -42,7 +44,6 @@
         <div class="nav-logo-type">
           <img src=<%= asset_path 'header-logo-type.png' %> >
         </div>
-
         <div class="nav-right">
           <div class="nav_item">
             <div class="link">
@@ -60,9 +61,6 @@
       </div>
     </div>
     <div class="nav-bottom"></div>
-
     <%= yield %>
-
-
   </body>
 </html>

@@ -1,0 +1,12 @@
+$(document).ready(function () {
+ setImageOne();
+});
+
+function setImageOne() {
+ $('#white-cap-image').fadeIn(500).html('<img src=<%= asset_path 'whitecap-headline.png' %> >').delay(4000).fadeOut(500, function () { setImageTwo(); });
+}
+
+function setImageTwo() {
+ $('#white-cap-image').fadeIn(500).html('<img src=<%= asset_path 'whitecap-logo.png' %> >').delay(4000).fadeOut(500, function () { setImageOne(); });
+}
+
