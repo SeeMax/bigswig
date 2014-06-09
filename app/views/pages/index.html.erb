@@ -11,36 +11,39 @@
       Join us on our quest.
     </h1>
     <div class="home-arrow"
-    data-1-top="padding-top:15px;"
-    data-10-top="padding-top:10px;"
-    data-20-top="padding-top:5px;"
-    data-30-top="padding-top:0px;"
-    data-40-top="padding-top:5px;"
-    data-50-top="padding-top:10px;"
-    data-60-top="padding-top:15px;"
-    data-70-top="padding-top:10px;"
-    data-80-top="padding-top:5px;"
-    data-90-top="padding-top:0px;"
-    data-100-top="padding-top:5px;"
-    data-110-top="padding-top:10px;"
-    data-anchor-target="#bounce"    >
-      <a data-scroll href="#the_tour"><img src=<%= asset_path 'home-arrow.png' %> ></a>
+      data-1-top="padding-top:15px;"
+      data-10-top="padding-top:10px;"
+      data-20-top="padding-top:5px;"
+      data-30-top="padding-top:0px;"
+      data-40-top="padding-top:5px;"
+      data-50-top="padding-top:10px;"
+      data-60-top="padding-top:15px;"
+      data-70-top="padding-top:10px;"
+      data-80-top="padding-top:5px;"
+      data-90-top="padding-top:0px;"
+      data-100-top="padding-top:5px;"
+      data-110-top="padding-top:10px;"
+      data-anchor-target="#bounce"
+    >
+      <a href="#the_tour"><img src=<%= asset_path 'home-arrow.png' %> ></a>
     </div>
   </div>
 </div>
 </div><!-- CLOSING TAG FOR <div id="#home"> IN APPLICATION TEMPLATE -->
-<div id ="the_tour" class="tour page">
+<div id="the_tour" class="tour page"
+  data-menu-offset="-56"
+>
   <div class="content"
-  data-top="opacity:1;"
-  data-center="opacity: 0;"
-  data-anchor-target=".home"
+    data-top="opacity:1;"
+    data-center="opacity:0;"
+    data-anchor-target=".home"
   >
     <div class="section-title">
       THE TOUR
     </div>
     <h1>
-      Imagine your frosty cold pint with a storyteller sidecar<br>
-      and you’re imagining<br>
+      Imagine your frosty cold pint with a storyteller sidecar
+      and you’re imagining
       an afternoon with Big Swig.
     </h1>
       <p>
@@ -55,9 +58,9 @@
 <div class="breweries-area page">
   <div class="content cf">
     <div class="brewery-container"
-    data-center="margin-top:400px;"
-    data-top="margin-top:0;"
-    data-anchor-target="#the_tour h1"
+    data-top="margin-top:300px;"
+    data-center-bottom="margin-top:0px;"
+    data-anchor-target=".tour"
     >
       <div class="brewery">
         <img src=<%= asset_path 'brewery_icon_1.png' %> >
@@ -71,9 +74,9 @@
       </div>
     </div>
     <div class="brewery-container"
-    data-center="margin-top:200px; opacity:1"
-    data-top="margin-top:0; opacity 0"
-    data-anchor-target="#the_tour h1"
+      data-top="margin-top:200px;"
+      data-center-bottom="margin-top:0px;"
+      data-anchor-target=".tour"
     >
       <div class="brewery">
         <img src=<%= asset_path 'brewery_icon_2.png' %> >
@@ -87,10 +90,9 @@
       </div>
     </div>
     <div class="brewery-container"
-    data-center="margin-top:500px;"
-    data-top="margin-top:0;"
-    data-anchor-target="#the_tour h1"
-
+      data-top="margin-top:250px;"
+      data-center-bottom="margin-top:0px;"
+      data-anchor-target=".tour"
     >
       <div class="brewery" id="brewery-3">
         <img src=<%= asset_path 'brewery_icon_3.png' %> >
@@ -105,17 +107,13 @@
   </div>
 </div>
 
-<div class="travel-quote page"
-data-300-top="margin-top:0px;"
-data-top-bottom="margin-top:-700px;"
-data-anchor-target=".breweries-area"
->
+<div class="travel-quote page">
   <div class="tickets-button">
     <a href="www.eventbrite.com" target="_blank">Buy tickets!</a>
   </div>
   <img src=<%= asset_path 'road.png' %> >
 </div>
-<div id ="about_us" class="about page" >
+<div id="about_us" class="about page" data-menu-offset="-353">
   <div class="content">
     <div class="section-title">
       ABOUT US
@@ -129,9 +127,9 @@ data-anchor-target=".breweries-area"
 <div class="woods page" >
   <div class="white-bar-box">
     <div class="white-bar"
-    data-top="height:0%;"
-    data-top-bottom="height:100%;"
-    data-anchor-target=".about"
+      data-100-top="height:0px;"
+      data-top-bottom="height:80px;"
+      data-anchor-target=".about"
     >
     </div>
   </div>
@@ -146,11 +144,9 @@ data-anchor-target=".breweries-area"
   </h2>
   <div class="white-bar-box">
     <div class="white-bar"
-    <div class="white-bar"
-    data-top="height:0%;"
-    data-top-bottom="height:100%;"
-    data-anchor-target=".about"
-
+      data-100-top="height:0px;"
+      data-top-bottom="height:80px;"
+      data-anchor-target=".about"
     >
     </div>
   </div>
@@ -160,7 +156,7 @@ data-anchor-target=".breweries-area"
   </div>
 </div>
 <div class="yellow-bar page" ></div>
-<div id ="tickets" class="tickets-headline page" >
+<div id ="tickets" class="tickets-headline page" data-menu-offset="-56" >
   <div class="content">
     <div class="section-title">
       TICKETS
@@ -168,7 +164,7 @@ data-anchor-target=".breweries-area"
     <img src=<%= asset_path 'tour-details.png' %> >
   </div>
 </div>
-<div class="tickets-copy page" >
+<div class="tickets-copy page">
   <div class="content">
     <p>
       Tickets include 12 beer tastings, a selection of appetizers at
@@ -196,13 +192,34 @@ data-anchor-target=".breweries-area"
       <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a><br>
       <a href="http://searchinstagram.com/bigswig" target"_blank" >#BigSwig</a>
     </p>
+
+
     <div class="social-icons">
-      <img class ="icon" src=<%= asset_path 'fb-icon.png' %> >
-      <img class ="icon" src=<%= asset_path 'insta-icon.png' %> >
-      <img class ="icon" src=<%= asset_path 'yelp-icon.png' %> >
-      <img class ="icon" src=<%= asset_path 'tripadvisor-icon.png' %> >
+      <a href="http://www.facebook.com/bigswigtours"><img class ="icon"
+        data-bottom-top="padding-left:50px; padding-right:50px;"
+        data-bottom="padding-left:3px; padding-right:3px;"
+        data-anchor-target=".footer"
+      src=<%= asset_path 'fb-icon.png' %> ></a>
+      <a href="http://searchinstagram.com/bigswig"><img class ="icon"
+        data-bottom-top="padding-left:50px; padding-right:50px;"
+        data-bottom="padding-left:3px; padding-right:3px;"
+        data-anchor-target=".footer"
+        src=<%= asset_path 'insta-icon.png' %> ></a>
+      <a href="http://www.yelp.com/biz/big-swig-tours"><img class ="icon"
+       data-bottom-top="padding-left:50px; padding-right:50px;"
+       data-bottom="padding-left:3px; padding-right:3px;"
+       data-anchor-target=".footer"
+       src=<%= asset_path 'yelp-icon.png' %> ></a>
+      <a href="http://www.tripadvisor.com/Attraction_Review-big-swig-tour-Anchorage_Alaska.html"><img class ="icon"
+        data-bottom-top="padding-left:50px; padding-right:50px;"
+        data-bottom="padding-left:3px; padding-right:3px;"
+        data-anchor-target=".footer"
+        src=<%= asset_path 'tripadvisor-icon.png' %> ></a>
     </div>
+
+
   </div>
 </div>
+</div><!-- CLOSING TAG FOR <div id="#skrollr-body"> IN APPLICATION TEMPLATE -->
 
 

@@ -1,13 +1,4 @@
-$( document ).ready(function() {
-  smoothScroll.init({
-      speed: 500, // Integer. How fast to complete the scroll in milliseconds
-      easing: 'easeInOutCubic', // Easing pattern to use
-      updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-      offset: 57, // Integer. How far to offset the scrolling anchor location in pixels
-      callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
-      callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
-  });
-
+$(window).load(function() {
   ( function( $ ) {
       // Init Skrollr
       var s = skrollr.init({
@@ -16,6 +7,41 @@ $( document ).ready(function() {
               //console.log(data.curTop);
           }
       });
-  } )( jQuery );
 
+  //The options (second parameter) are all optional. The values shown are the default values.
+  skrollr.menu.init(s, {
+      //skrollr will smoothly animate to the new position using `animateTo`.
+      animate: true,
+
+      //The easing function to use.
+      easing: 'sqrt',
+
+      //Multiply your data-[offset] values so they match those set in skrollr.init
+      scale: 2,
+
+      //How long the animation should take in ms.
+      duration: function(currentTop, targetTop) {
+          //By default, the duration is hardcoded at 500ms.
+          return 1000;
+
+          //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+          //return Math.abs(currentTop - targetTop) * 10;
+      },
+
+
+  });
+
+
+  } )( jQuery );
 });
+
+
+
+
+
+
+
+
+
+
+
