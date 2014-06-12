@@ -25,6 +25,7 @@
 
 .nav-width {
   width:90%;
+  height:30px;
   text-align:center;
   position:relative;
   top:15px;
@@ -33,6 +34,7 @@
   margin-right: auto !important;
   margin-left: auto;
   z-index:101;
+  @include transition3;
 }
 
 a {
@@ -126,6 +128,10 @@ a:hover {
 
 .small-nav {
 
+  .nav-width {
+    top:0px;
+  }
+
   .nav-logo-mark {
     top:1px;
 
@@ -141,6 +147,7 @@ a:hover {
     img {
       width:105px;
       height:27px;
+      margin-top:15px;
     }
   }
 }

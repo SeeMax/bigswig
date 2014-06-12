@@ -178,6 +178,9 @@ p {
     margin:0px auto;
     width:65px;
     height:65px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
   }
 }
 
@@ -204,6 +207,9 @@ p {
 .brewery-container {
   float:left;
   width:33%;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 
   .brewery {
     width:240px;
