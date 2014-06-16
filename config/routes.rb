@@ -1,4 +1,5 @@
 BigSwig::Application.routes.draw do
   root 'application#page'
-  get  ':page', to: 'application#page'
+  get  '/details', to: 'application#details'
+  get  '/:page',   to: 'application#page'
 end

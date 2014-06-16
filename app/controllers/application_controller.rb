@@ -8,4 +8,8 @@ class ApplicationController < ActionController::Base
   rescue ActionView::MissingTemplate
     render template: "pages/404"
   end
+
+  def details
+    render template: "pages/details", layout: "detail-layout"
+  end
 end
