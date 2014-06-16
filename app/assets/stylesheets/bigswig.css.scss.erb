@@ -381,6 +381,9 @@ p {
 
 #ticketdetails {
   display:none;
+  background:$yellow;
+  text-align:left;
+  padding:10px;
 }
 
 /* =================================== */
@@ -424,16 +427,13 @@ p {
 
 
 @media screen and (min-width: 0px) and (max-width: 479px) {
-  body {
-
-  }
 
   .stuck, .sticky-wrapper, .nav-top, .nav-bottom {
     display:none;
   }
 
   .tag-line {
-    font-size:25px;
+    font-size:22px;
   }
 
   h1 {
@@ -519,29 +519,91 @@ p {
 
 
 @media screen and (min-width: 480px) and (max-width: 769px) {
-    body {
-
-  }
 
   .stuck, .sticky-wrapper, .nav-top, .nav-bottom {
     display:none;
   }
 
-    .content {
+  .tag-line {
+    font-size:22px;
+  }
+
+  h1 {
+    font-size:24px;
+    line-height:28px;
+  }
+
+  .content {
+    width:90%;
+  }
+
+  .section-title {
+    font-size:30px;
+    border:3px white solid;
+  }
+
+  .about .section-title {
+    border:3px black solid;
+  }
+
+  .home .home-arrow {
+    top:40px;
+  }
+
+  .brewery-container {
+    float:none;
+    width:70%;
+    margin:0 auto 100px auto;
+
+    .brewery {
+      width:100%;
+    }
+  }
+
+  .tickets-headline {
+    height:650px;
+
+    img {
+      padding-top:30px;
+    }
+  }
+
+
+  .travel-quote {
+
+    background-image: url('<%= asset_path("road_m.png") %>');
+    padding-bottom: 108%;
+  }
+
+  .whitecaps-carousel {
+    position:relative;
+    background-image: url('<%= asset_path("whitecaps.png") %>');
+    height: 770px;
+    padding: 0;
+    padding-bottom:0;
+    background-position: center center;
+    background-size:770px 770px;
+    background-repeat: no-repeat;
+
+    img {
       width:90%;
     }
+  }
 
-    .brewery-container {
-      float:none;
-      width:70%;
-      margin:0 auto 100px auto;
+  .tickets-headline {
+    background-image: url('<%= asset_path("beerboard.jpg") %>');
+    height:500px;
+    padding: 0;
+    padding-bottom:0;
+    background-position: center top;
+    background-size:cover;
+    background-repeat: no-repeat;
 
-      .brewery {
-        width:100%;
-      }
+    img {
+      padding-top:20px;
+      width:90%;
     }
-
-
+  }
   }
 
 /* =================================== */
