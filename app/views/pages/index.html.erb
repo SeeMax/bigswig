@@ -1,99 +1,109 @@
-<div class="tag-line">
-  a GOOD TIME SUPPLY <sup>co</sup>
-</div>
-<div id="bounce"></div>
-<div class="home page">
-  <div class="content">
-    <h1>
-      Welcome to Big Swig Tours.<br>
-      We’re exploring the Last Frontier, <br>
-      one craft brewery at a time. <br>
-      Join us on our quest.
-    </h1>
-    <div class="home-arrow"
-      data-1-top="padding-top:15px;"
-      data-10-top="padding-top:10px;"
-      data-20-top="padding-top:5px;"
-      data-30-top="padding-top:0px;"
-      data-40-top="padding-top:5px;"
-      data-50-top="padding-top:10px;"
-      data-60-top="padding-top:15px;"
-      data-70-top="padding-top:10px;"
-      data-80-top="padding-top:5px;"
-      data-90-top="padding-top:0px;"
-      data-100-top="padding-top:5px;"
-      data-110-top="padding-top:10px;"
-      data-anchor-target="#bounce"
-    >
-      <a href="#the_tour"><img src=<%= asset_path 'home-arrow.png' %> ></a>
+
+<div id="skrollr-body">
+
+  <div class="mobile-logo">
+    <img src=<%= asset_path 'header-logo-mark.png' %> >
+    <div class="mobile-logo-type">
+      <img src=<%= asset_path 'header-logo-type.png' %> >
     </div>
   </div>
-</div>
-</div><!-- CLOSING TAG FOR <div id="#home"> IN APPLICATION TEMPLATE -->
-<div id="the_tour" class="tour page"
-  data-menu-offset="-56"
->
-  <div class="content"
-    data-top="opacity:1;"
-    data-center="opacity:0;"
-    data-anchor-target=".home"
+  <div id ="home_anchor">
+    <div class="tag-line">
+      a GOOD TIME SUPPLY <sup>co</sup>
+    </div>
+    <div id="bounce"></div>
+    <div class="home page">
+      <div class="content">
+        <h1>
+          Welcome to Big Swig Tours.<br>
+          We’re exploring the Last Frontier, <br>
+          one craft brewery at a time. <br>
+          Join us on our quest.
+        </h1>
+        <div class="home-arrow"
+          data-1-top="padding-top:15px;"
+          data-10-top="padding-top:10px;"
+          data-20-top="padding-top:5px;"
+          data-30-top="padding-top:0px;"
+          data-40-top="padding-top:5px;"
+          data-50-top="padding-top:10px;"
+          data-60-top="padding-top:15px;"
+          data-70-top="padding-top:10px;"
+          data-80-top="padding-top:5px;"
+          data-90-top="padding-top:0px;"
+          data-100-top="padding-top:5px;"
+          data-110-top="padding-top:10px;"
+          data-anchor-target="#bounce"
+        >
+          <a href="#the_tour"><img src=<%= asset_path 'home-arrow.png' %> ></a>
+        </div>
+      </div>
+    </div>
+  </div><!-- END OF HOME ANCHOR FOR MENU -->
+  <div id="the_tour" class="tour page"
+    data-menu-offset="-56"
   >
-    <div class="section-title">
-      THE TOUR
-    </div>
-    <h1>
-      Imagine your frosty cold pint with a storyteller sidecar
-      and you’re imagining
-      an afternoon with Big Swig.
-    </h1>
-      <p>
-        By that we mean our tours are as much about the history of Alaskan beers, the masters who brew them and the locals who drink them, as they are about tasting the beers themselves*.<br><br>
-        Each tour departs from the heart of downtown Anchorage. During your 3.5 hour adventure, your Big Swig Hoperator will escort you around town and off the beaten path as you explore Alaska’s finest breweries.
-    </p>
-    <div class="asterisk">
-      *Okay, so tasting the beers is the most important. Who are we kidding? Big Swig’s our name.
+    <div class="content"
+      data-bottom-top="opacity:0;"
+      data-156-top="opacity:1;"
+      data-anchor-target=".tour"
+    >
+      <div class="section-title">
+        THE TOUR
+      </div>
+      <h1>
+        Imagine your frosty cold pint with a storyteller sidecar
+        and you’re imagining
+        an afternoon with Big Swig.
+      </h1>
+        <p>
+          By that we mean our tours are as much about the history of Alaskan beers, the masters who brew them and the locals who drink them, as they are about tasting the beers themselves*.<br><br>
+          Each tour departs from the heart of downtown Anchorage. During your 3.5 hour adventure, your Big Swig Hoperator will escort you around town and off the beaten path as you explore Alaska’s finest breweries.
+      </p>
+      <div class="asterisk">
+        *Okay, so tasting the beers is the most important. Who are we kidding? Big Swig’s our name.
+      </div>
     </div>
   </div>
-</div>
-<div class="breweries-area page">
-  <div class="content cf">
-    <div class="brewery-container"
-    data-top="transform:translate(0, 200px);"
-    data-center-bottom="transform:translate(0, 0);"
-    data-anchor-target=".tour"
-    >
-      <div class="brewery">
-        <img src=<%= asset_path 'brewery_icon_1.png' %> >
-        <h2>
-          Midnight Sun<br>
-          Brewing Co.
-        </h2>
-        <p>
-          Anchorage’s oldest brewery, Midnight Sun has medaled at both the Great American Beer Festival and the World Beer Cup. Tastes like victory.
-        </p>
-      </div>
-    </div>
-    <div class="brewery-container"
-      data-top="transform:translate(0, 100px);"
-      data-center-bottom="transform:translate(0, 0);"
+  <div class="breweries-area page">
+    <div class="content cf">
+      <div class="brewery-container"
+      data-top="transform:translate(0px, 200px);"
+      data-center-bottom="transform:translate(0px, 0px);"
       data-anchor-target=".tour"
-    >
-      <div class="brewery">
-        <img src=<%= asset_path 'brewery_icon_2.png' %> >
-        <h2>
-          King Street<br>
-          Brewery
-        </h2>
-        <p>
-          New to the Alaska beer scene, King Street Brewing Company is proving that even the young cubs and hang with the old grizzlies.
-        </p>
+      >
+        <div class="brewery">
+          <img src=<%= asset_path 'brewery_icon_1.png' %> >
+          <h2>
+            Midnight Sun<br>
+            Brewing Co.
+          </h2>
+          <p>
+            Anchorage’s oldest brewery, Midnight Sun has medaled at both the Great American Beer Festival and the World Beer Cup. Tastes like victory.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="brewery-container"
-      data-top="transform:translate(0, 150px);"
-      data-center-bottom="transform:translate(0, 0);"
-      data-anchor-target=".tour"
-    >
+      <div class="brewery-container"
+        data-top="transform:translate(0px, 100px);"
+        data-center-bottom="transform:translate(0px, 0px);"
+        data-anchor-target=".tour"
+      >
+        <div class="brewery">
+          <img src=<%= asset_path 'brewery_icon_2.png' %> >
+          <h2>
+            King Street<br>
+            Brewery
+          </h2>
+          <p>
+            New to the Alaska beer scene, King Street Brewing Company is proving that even the young cubs and hang with the old grizzlies.
+          </p>
+        </div>
+      </div>
+      <div class="brewery-container"
+        data-top="transform:translate(0px, 150px);"x
+        data-center-bottom="transform:translate(0px, 0pxx);"
+        data-anchor-target=".tour"
+      >
       <div class="brewery" id="brewery-3">
         <img src=<%= asset_path 'brewery_icon_3.png' %> >
         <h2>
@@ -105,120 +115,122 @@
       </div>
     </div>
   </div>
-</div>
-
-<div class="travel-quote page">
-  <div class="tickets-button">
-    <a href="www.eventbrite.com" target="_blank">Buy tickets!</a>
-  </div>
-</div>
-<div id="about_us" class="about page" data-menu-offset="-53">
-  <div class="content">
-    <div class="section-title">
-      ABOUT US
-    </div>
-    <p>
-      At Big Swig our philosophy and our outlook on life are one in the same: drink good beer with good friends. It’s really that simple. That’s why it’s important to us that you get more out of our tours than the beer tastings. We want you to leave your time with us feeling like you’ve connected with Alaska and, most importantly, with the people who call this breathtaking state home.
-    </p>
-    <h1>We look forward to<br>raising our glass with you.</h1>
-  </div>
-</div>
-<div class="woods page" >
-  <div class="white-bar-box">
-    <div class="white-bar"
-      data-100-top="height:0px;"
-      data-top-bottom="height:80px;"
-      data-anchor-target=".about"
-    >
-    </div>
-  </div>
-  <h1>
-    Going to be in our <br>
-    neck of the woods? <br>
-    Holler at us. 
-  </h1>
-  <h2>
-    <a href="tel:+15555555555">555-5555-555</a><br>
-    <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a>
-  </h2>
-  <div class="white-bar-box">
-    <div class="white-bar"
-      data-100-top="height:0px;"
-      data-top-bottom="height:80px;"
-      data-anchor-target=".about"
-    >
-    </div>
-  </div>
-</div>
-<div class="whitecaps-carousel page" >
-  <div id="white-cap-image">
-  </div>
-</div>
-<div class="yellow-bar page" ></div>
-<div id ="tickets" class="tickets-headline page" data-menu-offset="-56" >
-  <div class="content">
-    <div class="section-title">
-      TICKETS
-    </div>
-    <img src=<%= asset_path 'tour-details.png' %> >
-  </div>
-</div>
-<div class="tickets-copy page">
-  <div class="content">
-    <p>
-      Tickets include 12 beer tastings, a selection of appetizers at
-      Midnight Sun, round-trip transportation and 3.5 hours of stories
-      you’ll be sure to recount to your friends back home.<br><br>
-      Oh, we should mention you have to be 21 or older to come along.
-      But you knew that already, didn’t you?
-    </p>
+  <div class="travel-quote page">
     <div class="tickets-button">
       <a href="www.eventbrite.com" target="_blank">Buy tickets!</a>
     </div>
   </div>
-</div>
-<div class="footer" >
-  <div class="content">
-    <div class="top-button">
-      <a data-scroll href="#home">
-        <img src=<%= asset_path 'top-button.png' %> >
-      </a>
+  <div id="about_us" class="about page" data-menu-offset="-53">
+    <div class="content">
+      <div class="section-title">
+        ABOUT US
+      </div>
+      <p>
+        At Big Swig our philosophy and our outlook on life are one in the same: drink good beer with good friends. It’s really that simple. That’s why it’s important to us that you get more out of our tours than the beer tastings. We want you to leave your time with us feeling like you’ve connected with Alaska and, most importantly, with the people who call this breathtaking state home.
+      </p>
+      <h1>We look forward to<br>raising our glass with you.</h1>
     </div>
-    <div class ="footer-image"> <img src=<%= asset_path 'footer-logo-type.png' %> ></div>
-    <div class ="footer-image"> <img src=<%= asset_path 'seam-icon.png' %> ></div>
-    <p>
-      <a href="tel:+15555555555">555-5555-555</a><br>
-      <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a><br>
-      <a href="http://searchinstagram.com/bigswig" target"_blank" >#BigSwig</a>
-    </p>
-
-
-    <div class="social-icons">
-      <a href="http://www.facebook.com/bigswigtours"><img class ="icon"
-        data-bottom-top="padding-left:50px; padding-right:50px;"
-        data-bottom="padding-left:3px; padding-right:3px;"
-        data-anchor-target=".footer"
-      src=<%= asset_path 'fb-icon.png' %> ></a>
-      <a href="http://searchinstagram.com/bigswig"><img class ="icon"
-        data-bottom-top="padding-left:50px; padding-right:50px;"
-        data-bottom="padding-left:3px; padding-right:3px;"
-        data-anchor-target=".footer"
-        src=<%= asset_path 'insta-icon.png' %> ></a>
-      <a href="http://www.yelp.com/biz/big-swig-tours"><img class ="icon"
-       data-bottom-top="padding-left:50px; padding-right:50px;"
-       data-bottom="padding-left:3px; padding-right:3px;"
-       data-anchor-target=".footer"
-       src=<%= asset_path 'yelp-icon.png' %> ></a>
-      <a href="http://www.tripadvisor.com/Attraction_Review-big-swig-tour-Anchorage_Alaska.html"><img class ="icon"
-        data-bottom-top="padding-left:50px; padding-right:50px;"
-        data-bottom="padding-left:3px; padding-right:3px;"
-        data-anchor-target=".footer"
-        src=<%= asset_path 'tripadvisor-icon.png' %> ></a>
-    </div>
-
-
   </div>
-</div>
-</div><!-- CLOSING TAG FOR <div id="#skrollr-body"> IN APPLICATION TEMPLATE -->
+  <div class="woods page" >
+    <div class="white-bar-box">
+      <div class="white-bar"
+        data-100-top="height:0px;"
+        data-top-bottom="height:80px;"
+        data-anchor-target=".about"
+      >
+      </div>
+    </div>
+    <h1>
+      Going to be in our <br>
+      neck of the woods? <br>
+      Holler at us. 
+    </h1>
+    <h2>
+      <a href="tel:+15555555555">555-5555-555</a><br>
+      <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a>
+    </h2>
+    <div class="white-bar-box">
+      <div class="white-bar"
+        data-100-top="height:0px;"
+        data-top-bottom="height:80px;"
+        data-anchor-target=".about"
+      >
+      </div>
+    </div>
+  </div>
+  <div class="whitecaps-carousel page" >
+    <div id="white-cap-image">
+    </div>
+  </div>
+  <div class="yellow-bar page" ></div>
+  <div id ="tickets" class="tickets-headline page" data-menu-offset="-56" >
+    <div class="content">
+      <div class="section-title">
+        TICKETS
+      </div>
+      <img src=<%= asset_path 'tour-details.png' %> >
+    </div>
+  </div>
+  <div class="tickets-copy page">
+    <div class="content">
+      <p>
+        Tickets include 12 beer tastings, a selection of appetizers at
+        Midnight Sun, round-trip transportation and 3.5 hours of stories
+        you’ll be sure to recount to your friends back home.
+        <br><br>
+        Oh, we should mention you have to be 21 or older to come along.
+        But you knew that already, didn’t you?
+        <br><br>
+        <a class="fancybox" rel="group" href="#ticketdetails">
+          Click Here</a>
+          if you want to read all the nitty gritty details
+      </p>
+      <div id="ticketdetails">
+        Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.Blah blah blah.
+      </div>
+      <div class="tickets-button">
+        <a href="www.eventbrite.com" target="_blank">Buy tickets!</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer" >
+    <div class="content">
+      <div class="top-button">
+        <a data-scroll href="#home">
+          <img src=<%= asset_path 'top-button.png' %> >
+        </a>
+      </div>
+      <div class ="footer-image"> <img src=<%= asset_path 'footer-logo-type.png' %> ></div>
+      <div class ="footer-image"> <img src=<%= asset_path 'seam-icon.png' %> ></div>
+      <p>
+        <a href="tel:+15555555555">555-5555-555</a><br>
+        <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a><br>
+        <a href="http://searchinstagram.com/bigswig" target"_blank" >#BigSwig</a>
+      </p>
+      <div class="social-icons">
+        <a href="http://www.facebook.com/bigswigtours"><img class ="icon"
+          data-bottom-top="padding-left:50px; padding-right:50px;"
+          data-bottom="padding-left:3px; padding-right:3px;"
+          data-anchor-target=".footer"
+        src=<%= asset_path 'fb-icon.png' %> ></a>
+        <a href="http://www.instagram.com/bigswigtours"><img class ="icon"
+          data-bottom-top="padding-left:50px; padding-right:50px;"
+          data-bottom="padding-left:3px; padding-right:3px;"
+          data-anchor-target=".footer"
+          src=<%= asset_path 'insta-icon.png' %> ></a>
+        <a href="http://www.yelp.com"><img class ="icon"
+         data-bottom-top="padding-left:50px; padding-right:50px;"
+         data-bottom="padding-left:3px; padding-right:3px;"
+         data-anchor-target=".footer"
+         src=<%= asset_path 'yelp-icon.png' %> ></a>
+        <a href="http://www.tripadvisor.com"><img class ="icon"
+          data-bottom-top="padding-left:50px; padding-right:50px;"
+          data-bottom="padding-left:3px; padding-right:3px;"
+          data-anchor-target=".footer"
+          src=<%= asset_path 'tripadvisor-icon.png' %> ></a>
+      </div>
+    </div>
+  </div>
+</div><!-- CLOSING TAG FOR <div id="skrollr-body"> IN APPLICATION TEMPLATE -->
 
 

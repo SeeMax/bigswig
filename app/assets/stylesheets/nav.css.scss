@@ -49,10 +49,11 @@ a:hover {
 
 .nav-right, .nav-left,{
   width:30%;
-  height:30px;
+  height:60px;
+  line-height:60px;
   margin:0;
   display:inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   @include transition3;
 }
 
@@ -97,14 +98,14 @@ a:hover {
 .nav_item {
   display:inline-block;
   width:49%;
-  height:10px;
+  height:100%;
   text-align:center;
   position:relative;
 }
 
 .link-back {
   position:absolute;
-  top:10px;
+  top:25px;
   margin:0px auto;
   left:0;
   right:0;
@@ -112,6 +113,67 @@ a:hover {
   width:110px;
   z-index:-1;
 }
+
+/* =================================== */
+/* Mobile Nav */
+
+.mobile-nav {
+  background:$lightGrey;
+  font-family:'Montserrat', sans-serif;
+  letter-spacing:0px;
+  font-size:14px;
+  font-weight:700;
+  text-transform: uppercase;
+  line-height:60px;
+  height:60px;
+  position:fixed;
+  top:0;
+  width:100%;
+  min-width:100%;
+  margin:0 auto;
+  left:0;
+  right:0;
+  z-index:1000;
+
+  .nav_item {
+    width:24%;
+    height:100%;
+    text-align:center;
+    position:relative;
+  }
+
+  .nav-link {
+
+  }
+
+  .link {
+    height:60px;
+
+    a {
+      width:100%;
+      height:100%;
+    }
+
+  }
+
+  .link-back {
+    width:80px;
+    height:7px;
+    top:27px;
+  }
+
+}
+
+.mobile-logo {
+  background:$lightGrey;
+  padding-top:80px;
+}
+
+.mobile-logo-type {
+  padding:10px 0px;
+}
+
+
 
 /* =================================== */
 /* Dynamic Components */
@@ -134,6 +196,8 @@ a:hover {
 
   .nav-logo-mark {
     top:1px;
+    width:1px;
+    height:1px;
 
     img {
       width:1px;
@@ -151,6 +215,8 @@ a:hover {
     }
   }
 }
+
+
 
 
 

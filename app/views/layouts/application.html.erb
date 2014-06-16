@@ -19,49 +19,77 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-  <div id="skrollr-body">
-  <div id ="home">
-    <div class="nav-top" ></div>
-    <div id="home-anchor"></div>
-    <div class="nav-bar">
-      <div class="nav-width">
-        <div class="nav-left">
-          <div class="nav_item" >
-            <div class="link">
-              <a href="#home">Home</a>
+    <div id="home">
+    <div class="desktop-nav">
+      <div class="nav-top" ></div>
+      <div class="nav-bar">
+        <div class="nav-width">
+          <div class="nav-left">
+            <div class="nav_item" >
+              <div class="link">
+                <a href="#home">Home</a>
+              </div>
+              <div id="item1" class="link-back"></div>
             </div>
-            <div id="item1" class="link-back"></div>
+            <div class="nav_item" >
+              <div class="link">
+                <a href="#the_tour">The Tour</a>
+              </div>
+              <div id= "item2" class="link-back"></div>
+            </div>
           </div>
-          <div class="nav_item" >
-            <div class="link">
-              <a href="#the_tour">The Tour</a>
-            </div>
-            <div id= "item2" class="link-back"></div>
+          <div class="nav-logo-mark">
+            <img src=<%= asset_path 'header-logo-mark.png' %> >
           </div>
-        </div>
-        <div class="nav-logo-mark">
-          <img src=<%= asset_path 'header-logo-mark.png' %> >
-        </div>
-        <div class="nav-logo-type">
-          <img src=<%= asset_path 'header-logo-type.png' %> >
-        </div>
-        <div class="nav-right">
-          <div class="nav_item">
-            <div class="link">
-              <a href="#about_us">About Us</a>
-            </div>
-            <div id="item3" class="link-back"></div>
+          <div class="nav-logo-type">
+            <img src=<%= asset_path 'header-logo-type.png' %> >
           </div>
-          <div class="nav_item" >
-            <div class="link">
-              <a href="#tickets">Tickets</a>
+          <div class="nav-right">
+            <div class="nav_item">
+              <div class="link">
+                <a href="#about_us">About Us</a>
+              </div>
+              <div id="item3" class="link-back"></div>
             </div>
-            <div id="item4" class="link-back"></div>
+            <div class="nav_item" >
+              <div class="link">
+                <a href="#tickets">Tickets</a>
+              </div>
+              <div id="item4" class="link-back"></div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="nav-bottom"></div>
     </div>
-    <div class="nav-bottom"></div>
+
+    <div class="mobile-nav">
+        <div class="nav_item" >
+          <div class="link">
+            <a href="#home">Home</a>
+          </div>
+          <div id="item1m" class="link-back"></div>
+        </div>
+        <div class="nav_item" >
+          <div class="link">
+            <a href="#the_tour">The Tour</a>
+          </div>
+          <div id= "item2m" class="link-back"></div>
+        </div>
+        <div class="nav_item">
+          <div class="link">
+            <a href="#about_us">About Us</a>
+          </div>
+          <div id="item3m" class="link-back"></div>
+        </div>
+        <div class="nav_item" >
+          <div class="link">
+            <a href="#tickets">Tickets</a>
+          </div>
+          <div id="item4" class="link-back"></div>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

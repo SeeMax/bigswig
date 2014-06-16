@@ -155,9 +155,20 @@ p {
   }
 }
 
+.sticky-wrapper {
+  background:$lightGrey;
+}
+
 
 /* =================================== */
-/* Sections */
+/* 404 */
+
+.Four0Four {
+  background:$yellow;
+}
+
+/* =================================== */
+/* Home */
 
 .home {
   background-image: url('<%= asset_path("beerpour.jpg") %>');
@@ -184,11 +195,20 @@ p {
   }
 }
 
+/* =================================== */
+/* Tour */
+
 .tour {
   background:$yellow;
 
   h1 {
     margin:60px auto;
+  }
+
+  .content {
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
   }
 }
 
@@ -196,6 +216,10 @@ p {
   margin:30px auto;
   font-size:12px;
 }
+
+
+/* =================================== */
+/* Breweries */
 
 .breweries-area {
   background:$darkYellow;
@@ -236,6 +260,9 @@ p {
   }
 }
 
+/* =================================== */
+/* Quote */
+
 .travel-quote {
   position: relative;
   background-image: url('<%= asset_path("road.png") %>');
@@ -246,6 +273,9 @@ p {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+/* =================================== */
+/* About */
 
 .about {
   background:white;
@@ -265,6 +295,10 @@ p {
     margin-bottom:20px;
   }
 }
+
+/* =================================== */
+/* Woods */
+
 
 .woods {
   background:$darkBrown;
@@ -296,6 +330,9 @@ p {
   }
 }
 
+/* =================================== */
+/* Carousel */
+
 .whitecaps-carousel {
   position:relative;
   background-image: url('<%= asset_path("whitecaps.png") %>');
@@ -316,6 +353,11 @@ p {
   background:$yellow;
 }
 
+
+/* =================================== */
+/* Tickets */
+
+
 .tickets-headline {
   background-image: url('<%= asset_path("beerboard.jpg") %>');
   height:750px;
@@ -326,8 +368,10 @@ p {
   background-repeat: no-repeat;
 
   img {
-    margin:70px auto 0 auto;
+    padding-top:70px;
+    margin:0px auto 0 auto;
     max-width:811px;
+    width:100%;
     text-align:center;
   }
 }
@@ -339,7 +383,22 @@ p {
   .content {
     padding: 100px 0;
   }
+
+  p {
+    a {
+      border-bottom:2px $darkBrown solid;
+      padding-bottom:2px;
+    }
+  }
 }
+
+#ticketdetails {
+  display:none;
+}
+
+/* =================================== */
+/* Footer */
+
 
 .footer {
   background: $darkBrown;
@@ -382,6 +441,10 @@ p {
 
   }
 
+  .stuck, .sticky-wrapper, .nav-top, .nav-bottom {
+    display:none;
+  }
+
   .tag-line {
     font-size:25px;
   }
@@ -403,7 +466,12 @@ p {
     float:none;
     width:70%;
     margin:0 auto 100px auto;
+
+    .brewery {
+      width:100%;
+    }
   }
+
 
   .travel-quote {
     position: relative;
@@ -454,7 +522,12 @@ p {
 @media screen and (min-width: 480px) and (max-width: 769px) {
     body {
 
-    }
+  }
+
+  .stuck, .sticky-wrapper, .nav-top, .nav-bottom {
+    display:none;
+  }
+
     .content {
       width:90%;
     }
@@ -463,7 +536,13 @@ p {
       float:none;
       width:70%;
       margin:0 auto 100px auto;
+
+      .brewery {
+        width:100%;
+      }
     }
+
+
   }
 
 /* =================================== */
@@ -475,10 +554,16 @@ p {
 
   }
 
+  .stuck, .sticky-wrapper, .nav-top, .nav-bottom {
+    display:none;
+  }
+
   .content {
     width:90%;
   }
 }
+
+
 
 /* =================================== */
 /* Responsive 960px - 1219px */
@@ -488,6 +573,12 @@ p {
   body {
 
   }
+
+  .mobile-logo, .mobile-nav {
+    display:none;
+  }
+
+
   .content {
     width:80%;
   }
@@ -498,8 +589,12 @@ p {
 
 
 @media screen and (min-width: 1350px) {
-  .home {
 
+  .mobile-logo, .mobile-nav {
+    display:none;
+  }
+
+  .home {
 
     p {
       font-size:40px;

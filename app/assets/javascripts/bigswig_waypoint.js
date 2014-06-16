@@ -3,21 +3,21 @@ $( document ).ready(function() {
 
 $('.nav-bar').waypoint('sticky');
 
-  $('#home-anchor').waypoint(function(direction) {
-    if (direction === 'down') {
-      $('#item1').addClass('active');
-      $('#item2').removeClass('active');
-      $('#item3').removeClass('active');
-      $('#item4').removeClass('active');
-    }
-  }, { offset: 30 });
-
   $('#home').waypoint(function(direction) {
+    if (direction === 'down') {
+      $('#item1, #item1m').addClass('active');
+      $('#item2, #item2m').removeClass('active');
+      $('#item3, #item3m').removeClass('active');
+      $('#item4, #item4m').removeClass('active');
+    }
+  }, { offset: -1 });
+
+  $('#home_anchor').waypoint(function(direction) {
     if (direction === 'up') {
-      $('#item1').addClass('active');
-      $('#item2').removeClass('active');
-      $('#item3').removeClass('active');
-      $('#item4').removeClass('active');
+      $('#item1, #item1m').addClass('active');
+      $('#item2, #item2m').removeClass('active');
+      $('#item3, #item3m').removeClass('active');
+      $('#item4, #item4m').removeClass('active');
     }
   }, {
     offset: function() {
@@ -30,19 +30,19 @@ $('.nav-bar').waypoint('sticky');
 
   $('#the_tour').waypoint(function(direction) {
     if (direction === 'down') {
-      $('#item2').addClass('active');
-      $('#item1').removeClass('active');
-      $('#item3').removeClass('active');
-      $('#item4').removeClass('active');
+      $('#item2, #item2m').addClass('active');
+      $('#item1, #item1m').removeClass('active');
+      $('#item3, #item3m').removeClass('active');
+      $('#item4, #item4m').removeClass('active');
     }
   }, { offset: 58 });
 
   $('#the_tour').waypoint(function(direction) {
     if (direction === 'up') {
-      $('#item2').addClass('active');
-      $('#item1').removeClass('active');
-      $('#item3').removeClass('active');
-      $('#item4').removeClass('active');
+      $('#item2, #item2m').addClass('active');
+      $('#item1, #item1m').removeClass('active');
+      $('#item3, #item3m').removeClass('active');
+      $('#item4, #item4m').removeClass('active');
     }
   }, {
     offset: function() {
@@ -54,19 +54,19 @@ $('.nav-bar').waypoint('sticky');
 
  $('#about_us').waypoint(function(direction) {
    if (direction === 'down') {
-     $('#item3').addClass('active');
-     $('#item2').removeClass('active');
-     $('#item1').removeClass('active');
-     $('#item4').removeClass('active');
+     $('#item3, #item3m').addClass('active');
+     $('#item2, #item2m').removeClass('active');
+     $('#item1, #item1m').removeClass('active');
+     $('#item4, #item4m').removeClass('active');
    }
  }, { offset: 58 });
 
  $('#about_us').waypoint(function(direction) {
    if (direction === 'up') {
-     $('#item3').addClass('active');
-     $('#item2').removeClass('active');
-     $('#item1').removeClass('active');
-     $('#item4').removeClass('active');
+     $('#item3, #item3m').addClass('active');
+     $('#item2, #item2m').removeClass('active');
+     $('#item1, #item1m').removeClass('active');
+     $('#item4, #item4m').removeClass('active');
    }
  }, {
    offset: function() {
@@ -78,19 +78,19 @@ $('.nav-bar').waypoint('sticky');
 
  $('#tickets').waypoint(function(direction) {
    if (direction === 'down') {
-     $('#item4').addClass('active');
-     $('#item2').removeClass('active');
-     $('#item1').removeClass('active');
-     $('#item3').removeClass('active');
+     $('#item4, #item4m').addClass('active');
+     $('#item2, #item2m').removeClass('active');
+     $('#item1, #item1m').removeClass('active');
+     $('#item3, #item3m').removeClass('active');
    }
  }, { offset: 58 });
 
  $('#tickets').waypoint(function(direction) {
    if (direction === 'up') {
-     $('#item4').addClass('active');
-     $('#item2').removeClass('active');
-     $('#item1').removeClass('active');
-     $('#item3').removeClass('active');
+     $('#item4, #item4m').addClass('active');
+     $('#item2, #item2m').removeClass('active');
+     $('#item1, #item1m').removeClass('active');
+     $('#item3, #item3m').removeClass('active');
    }
  }, {
    offset: function() {
