@@ -12,7 +12,7 @@ $('.nav-bar').waypoint('sticky');
     }
   }, { offset: -1 });
 
-  $('#home_anchor').waypoint(function(direction) {
+  $('#home').waypoint(function(direction) {
     if (direction === 'up') {
       $('#item1, #item1m').addClass('active');
       $('#item2, #item2m').removeClass('active');

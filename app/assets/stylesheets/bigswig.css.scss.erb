@@ -450,8 +450,8 @@ p {
   }
 
   h1 {
-    font-size:26px;
-    line-height:36px;
+    font-size:24px;
+    line-height:28px;
   }
 
   .content {
@@ -459,7 +459,16 @@ p {
   }
 
   .section-title {
-    font-size:40px;
+    font-size:30px;
+    border:3px white solid;
+  }
+
+  .about .section-title {
+    border:3px black solid;
+  }
+
+  .home .home-arrow {
+    top:40px;
   }
 
   .brewery-container {
@@ -472,16 +481,19 @@ p {
     }
   }
 
+  .tickets-headline {
+    height:650px;
+
+    img {
+      padding-top:30px;
+    }
+  }
+
 
   .travel-quote {
-    position: relative;
+
     background-image: url('<%= asset_path("road_m.png") %>');
-    height: 0;
-    padding: 0;
     padding-bottom: 108%;
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
 
   .whitecaps-carousel {
@@ -509,7 +521,7 @@ p {
     background-repeat: no-repeat;
 
     img {
-      margin:20px auto 0 auto;
+      padding-top:20px;
       width:90%;
     }
   }

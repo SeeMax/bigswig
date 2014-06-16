@@ -19,7 +19,6 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div id="home">
     <div class="desktop-nav">
       <div class="nav-top" ></div>
       <div class="nav-bar">
@@ -64,30 +63,29 @@
     </div>
 
     <div class="mobile-nav">
-        <div class="nav_item" >
-          <div class="link">
-            <a href="#home">Home</a>
-          </div>
-          <div id="item1m" class="link-back"></div>
+      <div class="nav_item" >
+        <div class="link">
+          <a href="#home">Home</a>
         </div>
-        <div class="nav_item" >
-          <div class="link">
-            <a href="#the_tour">The Tour</a>
-          </div>
-          <div id= "item2m" class="link-back"></div>
+        <div id="item1m" class="link-back"></div>
+      </div>
+      <div class="nav_item" >
+        <div class="link">
+          <a href="#the_tour">The Tour</a>
         </div>
-        <div class="nav_item">
-          <div class="link">
-            <a href="#about_us">About Us</a>
-          </div>
-          <div id="item3m" class="link-back"></div>
+        <div id= "item2m" class="link-back"></div>
+      </div>
+      <div class="nav_item">
+        <div class="link">
+          <a href="#about_us">About Us</a>
         </div>
-        <div class="nav_item" >
-          <div class="link">
-            <a href="#tickets">Tickets</a>
-          </div>
-          <div id="item4" class="link-back"></div>
+        <div id="item3m" class="link-back"></div>
+      </div>
+      <div class="nav_item" >
+        <div class="link">
+          <a href="#tickets">Tickets</a>
         </div>
+        <div id="item4" class="link-back"></div>
       </div>
     </div>
     <%= yield %>
