@@ -121,7 +121,7 @@ a:hover {
   background:$lightGrey;
   font-family:'Montserrat', sans-serif;
   letter-spacing:0px;
-  font-size:14px;
+  font-size:13px;
   font-weight:700;
   text-transform: uppercase;
   line-height:60px;
@@ -140,6 +140,7 @@ a:hover {
     height:100%;
     text-align:center;
     position:relative;
+    float:left;
   }
 
   .nav-link {

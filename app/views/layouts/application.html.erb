@@ -16,8 +16,6 @@
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-
-
   </head>
   <body>
     <div class="desktop-nav">
@@ -63,7 +61,33 @@
       <div class="nav-bottom"></div>
     </div>
 
-    <div class="mobile-nav"><div class="nav_item" ><div class="link"><a href="#home">Home</a></div><div id="item1m" class="link-back"></div></div><div class="nav_item" ><div class="link"><a href="#the_tour">The Tour</a></div><div id= "item2m" class="link-back"></div></div><div class="nav_item"><div class="link"><a href="#about_us">About Us</a></div><div id="item3m" class="link-back"></div></div><div class="nav_item" ><div class="link"><a href="#tickets">Tickets</a></div><div id="item4" class="link-back"></div></div></div>
+    <div class="mobile-nav">
+      <div class="nav_item" >
+        <div class="link">
+          <a data-scroll href="#home">Home</a>
+        </div>
+        <div id="item1m" class="link-back"></div>
+      </div>
+      <div class="nav_item" >
+        <div class="link">
+          <a data-scroll href="#the_tour">The Tour</a>
+        </div>
+        <div id= "item2m" class="link-back"></div>
+      </div>
+      <div class="nav_item">
+      <div class="link">
+        <a data-scroll href="#about_us">About Us</a>
+      </div>
+      <div id="item3m" class="link-back"></div>
+    </div>
+    <div class="nav_item" >
+      <div class="link">
+        <a data-scroll href="#tickets">Tickets</a>
+      </div>
+      <div id="item4" class="link-back"></div>
+    </div>
+  </div>
+
     <%= yield %>
   </body>
 </html>
