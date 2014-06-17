@@ -1,8 +1,7 @@
 $(function() {
-    var windowWidth = $(window).width();
-     if(windowWidth > 767){
-      skrollr.init({
-      forceHeight: false
-    });
-  }
+   if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+       skrollr.init({
+           forceHeight: false
+       });
+   }
 });
