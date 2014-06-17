@@ -17,15 +17,6 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
 
-    <script>
-    $(function() {
-         var windowWidth = $(window).width();
-         if(windowWidth > 767){
-      skrollr.init({
-      forceHeight: false
-      });
-      }});
-    </script>
 
   </head>
   <body>
@@ -36,13 +27,13 @@
           <div class="nav-left">
             <div class="nav_item" >
               <div class="link">
-                <a href="#home">Home</a>
+                <a data-scroll href="#home">Home</a>
               </div>
               <div id="item1" class="link-back"></div>
             </div>
             <div class="nav_item" >
               <div class="link">
-                <a href="#the_tour">The Tour</a>
+                <a data-scroll href="#the_tour">The Tour</a>
               </div>
               <div id= "item2" class="link-back"></div>
             </div>
@@ -56,13 +47,13 @@
           <div class="nav-right">
             <div class="nav_item">
               <div class="link">
-                <a href="#about_us">About Us</a>
+                <a data-scroll href="#about_us">About Us</a>
               </div>
               <div id="item3" class="link-back"></div>
             </div>
             <div class="nav_item" >
               <div class="link">
-                <a href="#tickets">Tickets</a>
+                <a data-scroll href="#tickets">Tickets</a>
               </div>
               <div id="item4" class="link-back"></div>
             </div>
