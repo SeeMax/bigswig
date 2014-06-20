@@ -98,8 +98,8 @@
           </div>
         </div>
         <div class="brewery-container"
-          data-top="transform:translate(0px, 150px);"x
-          data-center-bottom="transform:translate(0px, 0pxx);"
+          data-top="transform:translate(0px, 150px);"
+          data-center-bottom="transform:translate(0px, 0px);"
           data-anchor-target=".tour"
         >
           <div class="brewery" id="brewery-3">
@@ -119,7 +119,12 @@
         <a href="http://www.eventbrite.com/o/big-swig-tours-6752785915" target="_blank">Buy tickets!</a>
       </div>
     </div>
-    <div id="about_us" class="about page" data-menu-offset="-53">
+    <div id="about_us"
+      class="about page"
+      data-menu-offset="-53"
+      data-600-top="transform:translate(0px, 0px);"
+      data-center-bottom="transform:translate(0px, -150px);"
+      data-anchor-target="#about_us">
       <div class="content">
         <div class="section-title">
           ABOUT US
@@ -201,22 +206,22 @@
         <a href="http://searchinstagram.com/bigswig" target"_blank" >#BigSwig</a>
       </p>
       <div class="social-icons">
-        <a href="http://www.facebook.com/bigswigtours"><img class ="icon"
+        <a href="http://www.facebook.com/bigswigtours" target="_blank"><img class ="icon"
           data-bottom-top="padding-left:50px; padding-right:50px;"
           data-bottom="padding-left:3px; padding-right:3px;"
           data-anchor-target=".footer"
         src=<%= asset_path 'fb-icon.png' %> ></a>
-        <a href="http://www.instagram.com/bigswigtours"><img class ="icon"
+        <a href="http://www.instagram.com/bigswigtours" target="_blank"><img class ="icon"
           data-bottom-top="padding-left:50px; padding-right:50px;"
           data-bottom="padding-left:3px; padding-right:3px;"
           data-anchor-target=".footer"
           src=<%= asset_path 'insta-icon.png' %> ></a>
-        <a href="http://www.yelp.com"><img class ="icon"
+        <a href="http://www.yelp.com" target="_blank"><img class ="icon"
          data-bottom-top="padding-left:50px; padding-right:50px;"
          data-bottom="padding-left:3px; padding-right:3px;"
          data-anchor-target=".footer"
          src=<%= asset_path 'yelp-icon.png' %> ></a>
-        <a href="http://www.tripadvisor.com"><img class ="icon"
+        <a href="http://www.tripadvisor.com" target="_blank"><img class ="icon"
           data-bottom-top="padding-left:50px; padding-right:50px;"
           data-bottom="padding-left:3px; padding-right:3px;"
           data-anchor-target=".footer"

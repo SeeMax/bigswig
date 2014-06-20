@@ -168,11 +168,45 @@ a:hover {
 .mobile-logo {
   background:$lightGrey;
   padding:80px 0 20px 0;
+  text-align:center;
+
+  img {
+    width:218px;
+    height:142px;
+    @include transition2;
+
+  }
+
+  .mobile-logo-type {
+    padding:10px 0px;
+    text-align:center;
+
+    img {
+      width:210px;
+      height:54px;
+      @include transition2;
+    }
+  }
 }
 
-.mobile-logo-type {
-  padding:10px 0px;
+.small-logo {
+
+
+  img {
+    width:0px;
+    height:0px;
+  }
+
+  .mobile-logo-type {
+
+    img {
+      width:0px;
+      height:0px;
+      @include transition;
+    }
+  }
 }
+
 
 
 
