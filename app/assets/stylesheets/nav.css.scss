@@ -173,7 +173,7 @@ a:hover {
   img {
     width:218px;
     height:142px;
-    @include transition;
+    @include transition3;
 
   }
 
@@ -184,7 +184,7 @@ a:hover {
     img {
       width:210px;
       height:54px;
-      @include transition;
+      @include transition3;
     }
   }
 }
