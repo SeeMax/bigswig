@@ -38,130 +38,199 @@
       </div>
     </div>
   </div><!-- #home -->
-    <div id="the_tour" class="tour page"
-      data-menu-offset="-56"
-    >
-      <div class="content"
-        data-bottom-top="opacity:0;"
-        data-156-top="opacity:1;"
-        data-anchor-target=".tour"
+  <div id="the_tour" class="tour page">
+    <div class="tour-content" data-bottom-top="opacity:0;" data-126-top="opacity:1;" data-anchor-target=".tour">
+      <div class="section-title">
+        THE TOURS
+      </div>
+      <div class="tour-buttons">
+        <div class="tour-toggle tour-toggle-one">
+          <div class="tour-icon">
+            <object data="<%= asset_path 'tour-number-1.svg' %>" type="image/svg+xml"></object>
+          </div>
+          <span>Anchorage Brews</span>
+        </div>
+        <div class="tour-toggle tour-toggle-two tour-toggle-hidden">
+          <div class="tour-icon">
+            <object data="<%= asset_path 'tour-number-2.svg' %>" type="image/svg+xml"></object>
+          </div>
+          <span>Hops on the Rail</span>
+        </div>
+      </div>
+      <div class="tour-container">
+
+        <div class="tour-one">
+          <div class="title-area">
+            <div class="content">
+              <h1>
+                Imagine your frosty cold pint with a storyteller sidecar and you’re imagining an afternoon with Big Swig.
+              </h1>
+              <p>
+                By that we mean our tours are as much about the history of Alaskan beers, the masters who brew them and the locals who drink them, as they are about tasting the beers themselves*.<br><br>
+                Each tour departs at 2:45pm, Monday-Saturday from the corner of 4th Ave. and F. St., the heart of downtown Anchorage. During your 3.5-hour adventure, your Big Swig Hoperator will escort you around town and off the beaten path as you explore Alaska’s finest breweries and beer-centric venues.
+              </p>
+              <div class="asterisk">
+                *Okay, so tasting the beers is the most important. Who are we kidding? Big Swig’s our name.
+              </div>
+            </div>
+          </div>
+          <div class="breweries-area">
+            <div class="content">
+              <div class="brewery">
+                <img src=<%= asset_path 'brewery_icon_1.png' %> >
+                <h2>
+                  Midnight Sun<br>
+                  Brewing Co.
+                </h2>
+                <p>
+                  Anchorage’s oldest brewery, Midnight Sun has medaled at both the Great American Beer Festival and the World Beer Cup. Tastes like victory.
+                </p>
+              </div>
+
+              <div class="brewery">
+                <img src=<%= asset_path 'brewery_icon_2.png' %> >
+                <h2>
+                  King Street<br>
+                  Brewery
+                </h2>
+                <p>
+                  New to the Alaska beer scene, King Street Brewing Company is proving that even the young cubs can hang with the old grizzlies.
+                </p>
+              </div>
+
+              <div class="brewery" id="brewery-3">
+                <img src=<%= asset_path 'brewery_icon_3.png' %> >
+                <h2>
+                  Chilkoot Charlies
+                </h2>
+                <p>
+                  It’s impossible to talk Alaskan beer history without visiting world famous Chilkoot Charlie’s. Sound like a local and call ‘em “Koot’s.”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tickets-button">
+            <a href="http://www.peek.com/purchase/activity/widget/556753890bdeebba1b0007c3" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now!" data-activity-gid="556753890bdeebba1b0007c3">Book Now!</a>
+          </div>
+
+        </div><!-- tour one -->
+
+        <div class="tour-two section-hidden">
+          <div class="title-area">
+            <div class="content">
+              <h1>
+                Your day of sudsy adventure begins as you board the Alaska Railroad for the 3 hour journey north to beautiful Talkeetna, AK!
+              </h1>
+              <p>
+                Your day will start in Anchorage as you board the Alaska Railroad bound for historic Talkeetna, Alaska, a quaint drinking town with a climbing problem. Once there, your 'Hoperator' will escort you on a behind the scenes look into 4 of Alaska's finest breweries as you explore your way back to Anchorage. Tickets include glass domed rail travel, a minimum of 16 beer tastings, a hearty sack lunch, round trip transportation and plenty of stories and surprises you'll be sure to recount to your friends back home.
+              </p>
+              <div class="asterisk">
+                *Keep your eyes peeled for wildlife and opportunities to see the Great One, Denali!
+              </div>
+            </div>
+          </div>
+          <div class="breweries-area">
+            <div class="content">
+              <div class="brewery">
+                <img src=<%= asset_path 'brewery_icon_1.png' %> >
+                <h2>
+                  Denali<br>
+                  Brewing Co.
+                </h2>
+                <p>
+                  Alaska's second largest brewery.
+                </p>
+              </div>
+
+              <div class="brewery">
+                <img src=<%= asset_path 'brewery_icon_2.png' %> >
+                <h2>
+                  Arkose<br>
+                  Brewing Co.
+                </h2>
+                <p>
+                  Stephen and June Gerteisen's thriving local brewery nestled among the towering peaks of the Chugach Mountains.
+                </p>
+              </div>
+
+              <div class="brewery">
+                <img src=<%= asset_path 'brewery_icon_3.png' %> >
+                <h2>
+                  Odd Man<br>
+                  Rush
+                </h2>
+                <p>
+                  Drawing on their deep roots in the local hockey community, the state’s newest brewery has fused their passions of hockey and beer to create a one of a kind hockey themed community brewery.
+                </p>
+              </div>
+              <div class="brewery">
+                <img src=<%= asset_path 'brewery_icon_4.png' %> >
+                <h2>
+                  Resolution<br>
+                  Brewing Co.
+                </h2>
+                <p>
+                  Anchorage's newest brewery, with less than a year under their belt. Resolution has already expanded their brewing capacity to keep up with the demand for their small batch, high quality ales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tickets-button">
+            <a href="http://www.peek.com/purchase/activity/widget/55e8c49006ecd7eb1302b183" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now" data-activity-gid="55e8c49006ecd7eb1302b183">Book Now!</a>
+          </div>
+        </div><!-- tour two -->
+      </div>
+    </div>
+  </div>
+
+  <div class="travel-quote page">
+
+  </div>
+  <div id="about_us"
+    class="about page"
+    data-menu-offset="-53"
+    data-600-top="transform:translate(0px, 0px);"
+    data-center-bottom="transform:translate(0px, -150px);"
+    data-anchor-target="#about_us">
+    <div class="content">
+      <div class="section-title">
+        ABOUT US
+      </div>
+      <p>
+        At Big Swig our philosophy and our outlook on life are one in the same: drink good beer with good friends. It’s really that simple. That’s why it’s important to us that you get more out of our tours than the beer tastings. We want you to leave your time with us feeling like you’ve connected with Alaska and, most importantly, with the people who call this breathtaking state home.
+      </p>
+      <h1>We look forward to<br>raising our glass with you.</h1>
+    </div>
+  </div>
+  <div class="woods page" >
+    <div class="white-bar-box">
+      <div class="white-bar"
+        data-100-top="height:0px;"
+        data-top-bottom="height:80px;"
+        data-anchor-target=".about"
       >
-        <div class="section-title">
-          THE TOUR
-        </div>
-        <h1>
-          Imagine your frosty cold pint with a storyteller sidecar
-          and you’re imagining
-          an afternoon with Big Swig.
-        </h1>
-          <p>
-            By that we mean our tours are as much about the history of Alaskan beers, the masters who brew them and the locals who drink them, as they are about tasting the beers themselves*.<br><br>
-            Each tour departs at 2:45pm, Monday-Saturday from the corner of 4th Ave. and F. St., the heart of downtown Anchorage. During your 3.5-hour adventure, your Big Swig Hoperator will escort you around town and off the beaten path as you explore Alaska’s finest breweries and beer-centric venues.
-        </p>
-        <div class="asterisk">
-          *Okay, so tasting the beers is the most important. Who are we kidding? Big Swig’s our name.
-        </div>
       </div>
     </div>
-    <div class="breweries-area page">
-      <div class="content cf">
-        <div class="brewery-container"
-        data-top="transform:translate(0px, 200px);"
-        data-center-bottom="transform:translate(0px, 0px);"
-        data-anchor-target=".tour"
-        >
-          <div class="brewery">
-            <img src=<%= asset_path 'brewery_icon_1.png' %> >
-            <h2>
-              Midnight Sun<br>
-              Brewing Co.
-            </h2>
-            <p>
-              Anchorage’s oldest brewery, Midnight Sun has medaled at both the Great American Beer Festival and the World Beer Cup. Tastes like victory.
-            </p>
-          </div>
-        </div>
-        <div class="brewery-container"
-          data-top="transform:translate(0px, 100px);"
-          data-center-bottom="transform:translate(0px, 0px);"
-          data-anchor-target=".tour"
-        >
-          <div class="brewery">
-            <img src=<%= asset_path 'brewery_icon_2.png' %> >
-            <h2>
-              King Street<br>
-              Brewery
-            </h2>
-            <p>
-              New to the Alaska beer scene, King Street Brewing Company is proving that even the young cubs can hang with the old grizzlies.
-            </p>
-          </div>
-        </div>
-        <div class="brewery-container"
-          data-top="transform:translate(0px, 150px);"
-          data-center-bottom="transform:translate(0px, 0px);"
-          data-anchor-target=".tour"
-        >
-          <div class="brewery" id="brewery-3">
-            <img src=<%= asset_path 'brewery_icon_3.png' %> >
-            <h2>
-              Chilkoot Charlies
-            </h2>
-            <p>
-              It’s impossible to talk Alaskan beer history without visiting world famous Chilkoot Charlie’s. Sound like a local and call ‘em “Koot’s.”
-            </p>
-          </div>
-        </div>
+    <h1>
+      Going to be in our <br>
+      neck of the woods? <br>
+      Holler at us. 
+    </h1>
+    <h2>
+      <a href="tel:+19072680872">907-268-0872 </a><br>
+      <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a>
+    </h2>
+    <div class="white-bar-box">
+      <div class="white-bar"
+        data-100-top="height:0px;"
+        data-top-bottom="height:80px;"
+        data-anchor-target=".about"
+      >
       </div>
     </div>
-    <div class="travel-quote page">
-      <div class="tickets-button">
-        <a href="http://www.peek.com/purchase/activity/widget/556753890bdeebba1b0007c3" class="peek-book-button red spacing-v" data-purchase-type="activity" data-button-text="Book Now!" data-activity-gid="556753890bdeebba1b0007c3">Book Now!</a>
-      </div>
-    </div>
-    <div id="about_us"
-      class="about page"
-      data-menu-offset="-53"
-      data-600-top="transform:translate(0px, 0px);"
-      data-center-bottom="transform:translate(0px, -150px);"
-      data-anchor-target="#about_us">
-      <div class="content">
-        <div class="section-title">
-          ABOUT US
-        </div>
-        <p>
-          At Big Swig our philosophy and our outlook on life are one in the same: drink good beer with good friends. It’s really that simple. That’s why it’s important to us that you get more out of our tours than the beer tastings. We want you to leave your time with us feeling like you’ve connected with Alaska and, most importantly, with the people who call this breathtaking state home.
-        </p>
-        <h1>We look forward to<br>raising our glass with you.</h1>
-      </div>
-    </div>
-    <div class="woods page" >
-      <div class="white-bar-box">
-        <div class="white-bar"
-          data-100-top="height:0px;"
-          data-top-bottom="height:80px;"
-          data-anchor-target=".about"
-        >
-        </div>
-      </div>
-      <h1>
-        Going to be in our <br>
-        neck of the woods? <br>
-        Holler at us. 
-      </h1>
-      <h2>
-        <a href="tel:+19072680872">907-268-0872 </a><br>
-        <a href="mailto:info@bigswigtours.com">info@bigswigtours.com</a>
-      </h2>
-      <div class="white-bar-box">
-        <div class="white-bar"
-          data-100-top="height:0px;"
-          data-top-bottom="height:80px;"
-          data-anchor-target=".about"
-        >
-        </div>
-      </div>
-    </div>
+  </div>
   <div class="whitecaps-carousel page" >
     <div id="white-cap-image">
     </div>
@@ -172,7 +241,20 @@
       <div class="section-title">
         TICKETS
       </div>
-      <img src=<%= asset_path 'tour-details_01_15.png' %> >
+      <div class="ticket-options">
+        <div class="single-ticket-option">
+          <h1>Anchorage Brews</h1>
+          <div class="tickets-button">
+            <a href="http://www.peek.com/purchase/activity/widget/556753890bdeebba1b0007c3" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now!" data-activity-gid="556753890bdeebba1b0007c3">Book Now!</a>
+          </div>
+        </div>
+        <div class="single-ticket-option">
+          <h1>Hops on the rail</h1>
+          <div class="tickets-button">
+            <a href="http://www.peek.com/purchase/activity/widget/55e8c49006ecd7eb1302b183" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now" data-activity-gid="55e8c49006ecd7eb1302b183">Book Now!</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="tickets-copy page">
@@ -190,11 +272,8 @@
         <br><br><br>
         Looking for gift cards?
       </p>
-        <div class="tickets-button giftcard-button">
-          <a href="http://www.peek.com/purchase/gift_card/556750b166096e5b3d000613" class="peek-book-button yellow spacing-v" data-purchase-type="gift-card" data-button-text="Purchase Gift Card" data-partner-gid="556750b166096e5b3d000613"></a>
-        </div>
-      <div class="tickets-button">
-        <a href="http://www.peek.com/purchase/activity/widget/556753890bdeebba1b0007c3" class="peek-book-button red spacing-v" data-purchase-type="activity" data-button-text="Book Now!" data-activity-gid="556753890bdeebba1b0007c3">Book Now!</a>
+      <div class="tickets-button giftcard-button">
+        <a href="http://www.peek.com/purchase/gift_card/556750b166096e5b3d000613" class="peek-book-button yellow spacing-v" data-purchase-type="gift-card" data-button-text="Purchase Gift Card" data-partner-gid="556750b166096e5b3d000613"></a>
       </div>
     </div>
   </div>

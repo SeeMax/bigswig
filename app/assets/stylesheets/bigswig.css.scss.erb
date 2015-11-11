@@ -15,8 +15,13 @@
 /* =================================== */
 /* General */
 
-html{
+
+html {
   height: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -32,6 +37,10 @@ body {
   height:100%;
   width:100%;
   position:relative;
+}
+
+object {
+  width: 100%;
 }
 
 a {
@@ -67,8 +76,9 @@ p {
 }
 
 .content {
-  width:60%;
-  padding:50px 0 50px 0;
+  width:75%;
+  max-width:1100px;
+  padding:50px 20px;
   margin:0 auto;
   position:relative;
 }
@@ -104,10 +114,13 @@ p {
   text-align:center;
   font-family: 'Montserrat', sans-serif;
   margin:0px auto 30px auto;
-  max-width:270px;
+  max-width:385px;
   padding: 20px 45px;
   border: 6px white solid;
 }
+
+/* =================================== */
+/* Buttons */
 
 .tickets-button {
   border:3px black solid;
@@ -120,10 +133,6 @@ p {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  position:absolute;
-  top:-25px;
-  left:0;
-  right:0;
   margin: 0 auto;
   @include transition;
 
@@ -218,6 +227,11 @@ p {
 
 .tour {
   background:$yellow;
+  position: relative;
+
+  .section-title {
+    margin-bottom:60px;
+  }
 
   h1 {
     margin:60px auto;
@@ -228,7 +242,106 @@ p {
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
   }
+
+  .tickets-button {
+    padding:8px 20px;
+    max-width:280px;
+    position:relative;
+    top:0px;
+    margin: 0px auto 30px auto;
+    @include transition;
+
+    a {
+      font-size:27px !important;
+    }
+  }
+
 }
+
+.tour-content {
+  width:100%;
+  padding:60px 0px;
+}
+
+.tour-buttons {
+  flex-wrap:wrap;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content:space-between;
+  width:60%;
+  margin:0 auto;
+  padding-top: 40px;
+}
+
+.tour-toggle {
+  display: flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  width:50%;
+  padding:10px 20px;
+  color:white;
+  background:$darkYellow;
+  border: 6px $darkYellow solid;
+  border-bottom: 0px black solid;
+  z-index: 10;
+  cursor: pointer;
+
+
+  .tour-icon {
+    width:18%;
+  }
+
+  span {
+    width:80%;
+    padding-left: 5%;
+  }
+}
+
+.tour-toggle-hidden {
+  background:none;
+
+  .tour-icon, span {
+    opacity: .6;
+  }
+}
+
+.section-hidden {
+  height:0;
+  overflow:hidden;
+}
+
+.tour-container {
+  position: relative;
+
+  .content {
+    padding-top: 30px;
+  }
+}
+
+.title-area {
+  background: $darkYellow;
+
+  .content {
+
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    color:black;
+  }
+
+  p {
+    width:100%;
+  }
+}
+
 
 .asterisk {
   margin:30px auto;
@@ -236,32 +349,18 @@ p {
 }
 
 
-/* =================================== */
+
 /* Breweries */
 
 .breweries-area {
-  background:$darkYellow;
-  width:100%;
   overflow: hidden;
-  padding:20px 0 50px 0;
-}
+  padding:50px 0 0 0;
 
-.brewery-container {
-  float:left;
-  width:33%;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-
-  .brewery {
-    width:240px;
-    margin:0px auto;
-
-    p {
-      padding: 10px 0;
-      font-size:14px;
-      line-height: 22px;
-    }
+  .content {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding-bottom: 0;
   }
 
   h2 {
@@ -278,6 +377,30 @@ p {
   }
 }
 
+.brewery {
+  width:33%;
+  padding: 5% 3%;
+
+  p {
+    padding: 10px 0;
+    font-size:14px;
+    line-height: 22px;
+  }
+}
+
+.tour-two {
+
+  .brewery {
+    width:25%;
+    padding: 5% 2%;
+  }
+}
+
+
+
+
+
+
 /* =================================== */
 /* Quote */
 
@@ -291,6 +414,11 @@ p {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+
+
+
+
 
 /* =================================== */
 /* About */
@@ -378,7 +506,6 @@ p {
 
 .tickets-headline {
   background-image: url('<%= asset_path("beerboard.jpg") %>');
-  height:750px;
   padding: 0;
   padding-bottom:0;
   background-position: center top;
@@ -409,6 +536,36 @@ p {
     }
   }
 }
+
+.ticket-options {
+  display: flex;
+  color:white;
+  font-size:30px;
+  margin-top:35px;
+  width:100%;
+
+  h1 {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
+.single-ticket-option {
+  flex-grow:1;
+  padding: 3%;
+  margin-top:3%;
+
+
+  &:nth-child(1) {
+    border-right:6px white solid;
+    border-bottom: 0px white solid;
+  }
+
+  .tickets-button {
+    margin: 8% auto 5% auto;
+  }
+}
+
 
 #ticketdetails {
   background:$yellow;
@@ -486,7 +643,7 @@ p {
     line-height:28px;
   }
 
-  .content {
+  .content, .tour-buttons {
     width:90%;
   }
 
@@ -503,23 +660,37 @@ p {
     top:40px;
   }
 
-  .brewery-container {
-    float:none;
-    width:70%;
-    margin:0 auto 100px auto;
+  .brewery {
+    width:100%;
+  }
+
+  .tour-two {
 
     .brewery {
       width:100%;
     }
   }
 
-  .tickets-headline {
-    height:650px;
+  .tour-toggle {
+    width:100%;
+  }
 
-    img {
-      padding-top:30px;
+  .ticket-options {
+    flex-direction:column;
+
+    .single-ticket-option {
+
+      &:nth-child(1) {
+        border-right:0px;
+        border-bottom: 6px white solid;
+      }
+    }
+
+    h1 {
+      font-size: 36px;
     }
   }
+
 
 
   .travel-quote {
@@ -545,7 +716,6 @@ p {
 
   .tickets-headline {
     background-image: url('<%= asset_path("beerboard.jpg") %>');
-    height:450px;
     padding: 0;
     padding-bottom:0;
     background-position: center top;
@@ -578,7 +748,7 @@ p {
     line-height:28px;
   }
 
-  .content {
+  .content, .tour-buttons {
     width:90%;
   }
 
@@ -595,21 +765,39 @@ p {
     top:40px;
   }
 
-  .brewery-container {
-    float:none;
-    width:70%;
-    margin:0 auto 100px auto;
+  .brewery {
+    width:100%;
+  }
+
+  .tour-two {
 
     .brewery {
       width:100%;
     }
   }
 
-  .tickets-headline {
-    height:650px;
+  .tour-toggle {
+    width:100%;
+  }
 
-    img {
-      padding-top:30px;
+
+  .ticket-options {
+    flex-direction:column;
+
+    .single-ticket-option {
+
+      &:nth-child(1) {
+        border-right:0px;
+        border-bottom: 6px white solid;
+      }
+    }
+
+    .tickets-button {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 38px;
     }
   }
 
@@ -637,7 +825,6 @@ p {
 
   .tickets-headline {
     background-image: url('<%= asset_path("beerboard.jpg") %>');
-    height:500px;
     padding: 0;
     padding-bottom:0;
     background-position: center top;
@@ -660,11 +847,31 @@ p {
 
   }
 
+  .ticket-options {
+    flex-direction:column;
+
+    .single-ticket-option {
+
+      &:nth-child(1) {
+        border-right:0px;
+        border-bottom: 6px white solid;
+      }
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    .tickets-button {
+      margin-top: 20px;
+    }
+  }
+
   .stuck, .sticky-wrapper, .nav-top, .nav-bottom {
     display:none;
   }
 
-  .content {
+  .content, .tour-buttons {
     width:90%;
   }
 }
@@ -685,7 +892,7 @@ p {
   }
 
 
-  .content {
+  .content, .tour-buttons {
     width:80%;
   }
 }
