@@ -291,13 +291,27 @@ p {
   border-bottom: 0px black solid;
   z-index: 10;
   cursor: pointer;
+  @include transition;
+
+  &:hover {
+    background:$darkYellow;
+    border: 6px $lightGrey solid;
+    border-bottom: 0px $yellow solid;
+
+
+    .tour-icon, span{
+      opacity:1;
+    }
+  }
 
 
   .tour-icon {
+    @include transition;
     width:18%;
   }
 
   span {
+    @include transition;
     width:80%;
     padding-left: 5%;
   }
@@ -526,7 +540,7 @@ p {
   color:white;
 
   .content {
-    padding: 100px 0;
+    padding: 40px 0 120px 0;
   }
 
   p {

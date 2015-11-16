@@ -43,7 +43,7 @@
       <div class="section-title">
         THE TOURS
       </div>
-      <div class="tour-buttons">
+      <div id="tour-top"  class="tour-buttons">
         <div class="tour-toggle tour-toggle-one">
           <div class="tour-icon">
             <object data="<%= asset_path 'tour-number-1.svg' %>" type="image/svg+xml"></object>
@@ -111,7 +111,7 @@
           </div>
 
           <div class="tickets-button">
-            <a href="http://www.peek.com/purchase/activity/widget/556753890bdeebba1b0007c3" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now!" data-activity-gid="556753890bdeebba1b0007c3">Book Now!</a>
+            <a href="http://www.peek.com/purchase/activity/widget/556753890bdeebba1b0007c3" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now" data-activity-gid="556753890bdeebba1b0007c3">Book Now</a>
           </div>
 
         </div><!-- tour one -->
@@ -123,7 +123,7 @@
                 Your day of sudsy adventure begins as you board the Alaska Railroad for the 3 hour journey north to beautiful Talkeetna, AK!
               </h1>
               <p>
-                Your day will start in Anchorage as you board the Alaska Railroad bound for historic Talkeetna, Alaska, a quaint drinking town with a climbing problem. Once there, your 'Hoperator' will escort you on a behind the scenes look into 4 of Alaska's finest breweries as you explore your way back to Anchorage. Tickets include glass domed rail travel, a minimum of 16 beer tastings, a hearty sack lunch, round trip transportation and plenty of stories and surprises you'll be sure to recount to your friends back home.
+                Your day will start in Anchorage as you board the Alaska Railroad bound for historic Talkeetna, Alaska, a quaint drinking town with a climbing problem. Once there, your 'Hoperator' will escort you on a behind the scenes look into 4 of Alaska's finest breweries as you explore your way back to Anchorage. Tickets include glass domed rail travel, a minimum of 16 beer tastings, a hearty box lunch, round trip transportation and plenty of stories and surprises you'll be sure to recount to your friends back home.
               </p>
               <div class="asterisk">
                 *Keep your eyes peeled for wildlife and opportunities to see the Great One, Denali!
@@ -139,7 +139,7 @@
                   Brewing Co.
                 </h2>
                 <p>
-                  Alaska's second largest brewery.
+                  Alaska’s second largest brewery nestled just 60 miles from North America’s tallest peak: Denali 20,320ft.
                 </p>
               </div>
 
@@ -178,7 +178,7 @@
           </div>
 
           <div class="tickets-button">
-            <a href="http://www.peek.com/purchase/activity/widget/55e8c49006ecd7eb1302b183" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now" data-activity-gid="55e8c49006ecd7eb1302b183">Book Now!</a>
+            <a href="http://www.peek.com/purchase/activity/widget/55e8c49006ecd7eb1302b183" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now" data-activity-gid="55e8c49006ecd7eb1302b183">Book Now</a>
           </div>
         </div><!-- tour two -->
       </div>
@@ -243,15 +243,19 @@
       </div>
       <div class="ticket-options">
         <div class="single-ticket-option">
-          <h1>Anchorage Brews</h1>
+          <a id="ticket-option-one" data-scroll href="#tour-top">
+            <h1>Anchorage Brews</h1>
+          </a>
           <div class="tickets-button">
-            <a href="http://www.peek.com/purchase/activity/widget/556753890bdeebba1b0007c3" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now!" data-activity-gid="556753890bdeebba1b0007c3">Book Now!</a>
+            <a href="http://www.peek.com/purchase/activity/widget/556753890bdeebba1b0007c3" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now" data-activity-gid="556753890bdeebba1b0007c3">Book Now</a>
           </div>
         </div>
-        <div class="single-ticket-option">
-          <h1>Hops on the rail</h1>
+        <div id="ticket-option-two" class="single-ticket-option">
+          <a data-scroll href="#tour-top">
+            <h1>Hops on the rail</h1>
+          </a>
           <div class="tickets-button">
-            <a href="http://www.peek.com/purchase/activity/widget/55e8c49006ecd7eb1302b183" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now" data-activity-gid="55e8c49006ecd7eb1302b183">Book Now!</a>
+            <a href="http://www.peek.com/purchase/activity/widget/55e8c49006ecd7eb1302b183" class="peek-book-button" data-wconfig='5625203f0bdeeb684d0a7cd1' data-purchase-type="activity" data-button-text="Book Now" data-activity-gid="55e8c49006ecd7eb1302b183">Book Now</a>
           </div>
         </div>
       </div>
@@ -260,16 +264,9 @@
   <div class="tickets-copy page">
     <div class="content">
       <p>
-        Tickets include 12 beer tastings, a selection of appetizers at
-        Midnight Sun, round-trip transportation and 3.5 hours of stories
-        you’ll be sure to recount to your friends back home.
-        <br><br>
-      </p>
-      <p>
-        <br><br>
         Looking for more details, group ticket sales and private event information.<br>
         <a href="mailto:info@bigswigtours.com">contact us</a>.
-        <br><br><br>
+        <br><br>
         Looking for gift cards?
       </p>
       <div class="tickets-button giftcard-button">
